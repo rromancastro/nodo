@@ -1,0 +1,113 @@
+"use client";
+import { SplitH2, SplitP } from '@/app/components';
+import './homeFourthSection.scss';
+import Link from 'next/link';
+import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+const cards = [
+    {
+        "p": "Gases Medicinales",
+        "imgSrc": "/home/GasesMedicinales.png",
+        "href": "/"
+    },
+    {
+        "p": "Puertas Automáticas",
+        "imgSrc": "/home/PuertasAutomaticas.png",
+        "href": "/"
+    },
+    {
+        "p": "Sistemas neumáticos",
+        "imgSrc": "/home/CorreoNeumatico.png",
+        "href": "/"
+    },
+    {
+        "p": "Policanales",
+        "imgSrc": "/home/Policanales.png",
+        "href": "/"
+    },
+    {
+        "p": "Robótica",
+        "imgSrc": "/home/Robotica.png",
+        "href": "/"
+    },
+]
+
+export const HomeFourthSection = () => {
+
+    const [cardSelected, setCardSelected] = useState(0);
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        const media = gsap.matchMedia();
+
+        media.add('(max-width: 990px)', () => {
+            const section = sectionRef.current;
+            const articles = gsap.utils.toArray('#homeFourthSectionCards article', section);
+            const updateCards = (progress) => {
+                const step = progress * (articles.length - 1);
+                const travel = section.querySelector('#homeFourthSectionSticky').offsetHeight;
+
+                articles.forEach((article, index) => {
+                    gsap.set(article, {
+                        y: index * 24 + Math.max(0, index - step) * travel,
+                        scale: Math.max(0.86, 1 - Math.max(0, step - index) * 0.045),
+                    });
+                });
+            };
+
+            updateCards(0);
+            ScrollTrigger.create({
+                trigger: section,
+                start: 'top top',
+                end: 'bottom bottom',
+                onUpdate: (self) => updateCards(self.progress),
+                onRefresh: (self) => updateCards(self.progress),
+            });
+
+            return () => gsap.set(articles, { clearProps: 'transform' });
+        });
+
+        return () => media.revert();
+    }, []);
+
+    return <section id='homeFourthSection' ref={sectionRef}>
+        <div id='homeFourthSectionSticky'>
+        <div id='homeFourthSectionNav'>
+            <SplitH2 id='homeFourthSectionNavTitle'>
+                Productos
+            </SplitH2>
+            <SplitP id='homeFourthSectionNavSubtitle'>
+                Equipamiento y aparatología hospitalaria, sistemas de automatización estándar y personalizados.
+            </SplitP>
+            <Link href='/' className='buttonContacto'>Ver más</Link>
+        </div>
+        <div id='homeFourthSectionCards'>
+            {
+                cards.map((card, index) => (
+                    <article
+                        key={index}
+                        style={{
+                            '--card-grow': cardSelected === index ? 1 : 0,
+                            '--card-filter': cardSelected === index ? 'none' : 'grayscale(1) brightness(.7)',
+                            '--card-index': index,
+                        }}
+                        onMouseEnter={() => setCardSelected(index)}
+                    >
+                        <Image src={card.imgSrc} alt='Imagen Producto' height={1000} width={1000} />
+                        <div style={{ '--card-opacity': cardSelected === index ? 1 : 0 }}>
+                            <p>
+                                {card.p}
+                            </p>
+                            <Link href={card.href} className='buttonContacto'>Ver más</Link>
+                        </div>
+                    </article>
+                ))
+            }
+        </div>
+        </div>
+    </section>
+}

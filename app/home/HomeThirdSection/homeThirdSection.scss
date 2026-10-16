@@ -1,0 +1,332 @@
+#homeThirdSection {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    align-items: center;
+    padding: 56px 0;
+
+    >section {
+        width: 100%;
+        padding: 0 56px;
+        height: 416px;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+
+        >div {
+            &:nth-child(1) {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                width: 100%;
+                max-width: 417px;
+
+                h2 {
+                    font-size: 32px;
+                }
+
+                p {
+                    font-size: 14px;
+                    width: 100%;
+                    max-width: 385px;
+                }
+
+                a {
+                    margin-top: auto;
+                }
+            }
+
+        }
+    }
+}
+
+.homeThirdSectionButtons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 8px;
+    z-index: 4;
+
+    button {
+        background-color: #1C1C1C0F;
+        border: none;
+        backdrop-filter: blur(40px);
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        transition: .5s;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        &:hover {
+            background-color: #1C1C1C29;
+        }
+    }
+}
+
+.homeThirdSectionCard {
+    position: absolute;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 16px 0px #0000000F;
+    display: flex;
+    align-items: flex-end;
+    transition: top .5s, right .5s, width .5s, height .5s, opacity .5s;
+    top: 12px;
+    right: 12px;
+    width: 280px;
+    height: 280px;
+    z-index: 1;
+    pointer-events: none;
+
+    img {
+        position: absolute;
+        z-index: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    >div {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 24px;
+        --card-opacity: 0;
+
+        &::before,
+        >p,
+        >a {
+            opacity: var(--card-opacity);
+            transition: opacity .5s;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: -48px 0 0;
+            z-index: 0;
+            pointer-events: none;
+            background: linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, #1C1C1C 100%);
+            -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+            -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 65%);
+            mask-image: linear-gradient(to bottom, transparent 0%, #000 65%);
+        }
+
+        >* {
+            position: relative;
+            z-index: 1;
+        }
+
+        p {
+            border-left: 2px solid #fff;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 8px;
+            gap: 4px;
+
+            span {
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+        >a {
+            text-wrap: nowrap;
+        }
+    }
+}
+
+.homeThirdSectionCarouselDesktop {
+    position: relative;
+    width: 735px;
+}
+
+.homeThirdSectionCarouselMobile {
+    display: none;
+}
+
+.homeThirdSectionCardSelected {
+    height: 416px;
+    width: 417px;
+    right: calc(100% - 417px);
+    top: 0;
+    z-index: 4;
+    pointer-events: auto;
+
+    >div {
+        --card-opacity: 1;
+    }
+}
+
+.homeThirdSectionCardNext {
+    height: 320px;
+    width: 302px;
+    right: 0;
+    top: 0;
+    z-index: 3;
+
+    >div {
+        --card-opacity: 0;
+
+        p,
+        a {
+            font-size: 10px;
+        }
+    }
+}
+
+.homeThirdSectionStatus {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .homeThirdSectionCard,
+    .homeThirdSectionCard>div::before,
+    .homeThirdSectionCard>div>p,
+    .homeThirdSectionCard>div>a {
+        transition: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    #homeThirdSection {
+        padding: 48px 0;
+        padding-bottom: 0;
+        gap: 48px;
+
+        >section {
+            padding: 0 32px;
+        }
+    }
+
+    .homeThirdSectionCard {
+        width: 220px;
+        height: 220px;
+    }
+
+    .homeThirdSectionCardSelected {
+        width: 330px;
+        height: 330px;
+        right: calc(100% - 330px);
+    }
+
+    .homeThirdSectionCardNext {
+        width: 240px;
+        height: 240px;
+    }
+
+    .homeThirdSectionCard {
+        >div {
+            gap: 8px;
+            min-width: 330px;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    #homeThirdSection {
+        >section {
+            flex-direction: column;
+            gap: 48px;
+            height: 100%;
+            width: 100%;
+            padding: 0px;
+
+            >div {
+                &:nth-child(1) {
+                    padding: 0 32px;
+                }
+            }
+        }
+    }
+
+    .homeThirdSectionCarouselDesktop {
+        display: none;
+    }
+
+    .homeThirdSectionCarouselMobile {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .homeThirdSectionCarouselMobileImages {
+            display: flex;
+            gap: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            padding-inline: max(0px, calc((100% - 329px) / 2));
+            position: relative;
+            overflow-x: auto;
+            overscroll-behavior-x: contain;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            height: 416px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .homeThirdSectionCard {
+                position: relative;
+                flex: 0 0 min(329px, 100%);
+                width: min(329px, 100%);
+                height: 416px;
+                top: 0;
+                right: auto;
+                scroll-snap-align: center;
+                transform: scale(.95);
+                transition: transform .7s ease;
+
+                &.homeThirdSectionCardMobileSelected {
+                    transform: scale(1);
+                }
+
+                >div {
+                    --card-opacity: 1;
+                    flex-direction: column;
+                    align-items: start;
+                }
+            }
+        }
+
+        .homeThirdSectionCarouselMobileIndex {
+            display: flex;
+            gap: 8px;
+            width: 100%;
+            justify-content: center;
+
+            >div {
+                height: 8px;
+                width: 8px;
+                background-color: #DDDDDD;
+                border-radius: 4px;
+                transition: .5s;
+            }
+
+            .homeThirdSectionCarouselMobileIndexSelected {
+                width: 21px;
+                background-color: #00778B;
+            }
+        }
+    }
+}

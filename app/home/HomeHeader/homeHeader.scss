@@ -1,0 +1,99 @@
+#homeHeader {
+    height: 200vh;
+    width: 100%;
+
+    >.homeHeaderSticky {
+        position: sticky;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+    }
+
+    .homeHeaderPanel {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-inline: auto;
+        border-radius: 8px;
+        overflow: hidden;
+
+        .homeHeaderVideo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        article {
+            position: absolute;
+            padding: 16px 0 0 16px;
+            background-color: #F5F5F5;
+            border-radius: 8px 0 0 0;
+            bottom: 0;
+            right: 0;
+
+            div {
+                border-radius: 8px;
+                background: linear-gradient(180deg, #DDDDDD 0%, #C3C2C2 100%);
+                display: flex;
+                flex-direction: column;
+                padding: 24px;
+                gap: 24px;
+                width: 448px;
+            }
+        }
+
+        >h1 {
+            z-index: 2;
+            color: #fff;
+            position: absolute;
+            font-size: 96px;
+            max-width: 863px;
+            font-weight: 600;
+            text-indent: 210px;
+            left: 48px;
+            top: 35vh;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #homeHeader {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    #homeHeader {
+        .homeHeaderPanel {
+            >h1 {
+                font-size: 64px;
+                max-width: 700px;
+                text-indent: 140px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #homeHeader {
+        .homeHeaderPanel {
+            article {
+                div {
+                    padding: 16px;
+                    width: 45vw;
+                    .buttonContacto {
+                        align-self: center;
+                    }
+                }
+            }
+
+            >h1 {
+                font-size: 40px;
+                max-width: 329px;
+                letter-spacing: -4%;
+                text-indent: 80px;
+            }
+        }
+    }
+}

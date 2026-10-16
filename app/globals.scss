@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Libre Franklin";
+  src: url('/fonts/LibreFranklin.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url('/fonts/Inter.ttf');
+  font-display: swap;
+}
+
+.color-black, h1, h2, h3 {
+  color: #1C1C1C;
+  line-height: 1;
+}
+.color-gray, p {
+  color: #6A6868;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px !important;
+}
+
+p, a, button {
+  font-size: 13px;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 300;
+  color: #6A6868;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Inter";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin: 64px 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: "Libre Franklin";
+}
+
+@media (max-width: 1024px) {
+  main {
+    gap: 0px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  p, button, a {
+    font-size: 12px;
+  }
+
+  h2, h1 {
+    font-size: 28px !important;
+  }
+}

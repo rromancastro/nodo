@@ -1,0 +1,26 @@
+#nosotrosHeader {
+    height: 100vh;
+    padding: 96px 56px 16px 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    >.headerImage {
+        flex: 1;
+        min-height: 0;
+        height: 0;
+    }
+}
+
+@media (max-width: 1024px){
+    #nosotrosHeader { 
+        padding: 112px 32px 16px;
+    }
+}
+
+@media (max-width: 768px){
+    #nosotrosHeader { 
+        padding: 80px 16px 48px;
+
+    }
+}

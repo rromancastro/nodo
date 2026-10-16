@@ -1,0 +1,16 @@
+.parallaxImage {
+    position: relative;
+    width: 100%;
+    min-height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+
+    >img {
+        position: absolute;
+        top: -10%;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        object-fit: cover;
+    }
+}

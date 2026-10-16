@@ -1,0 +1,120 @@
+.buttonContacto {
+    height: 40px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 8px 12px 0px #00000029;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #1C1C1C;
+    border: 0.25px solid #ffffffb9;
+    width: fit-content;
+    letter-spacing: 10%;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: #FF4863;
+
+    }
+}
+
+#contactoModal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #1C1C1C1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .3s ease, visibility .3s ease;
+
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+        article {
+            transform: translateY(0);
+        }
+    }
+
+    article {
+        transform: translateY(16px);
+        transition: transform .3s ease;
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 16px 0px #0000000F;
+        border-radius: 8px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        >div {
+            &:nth-child(1){
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h3 {
+                    font-size: 32px;
+                }
+
+                button {
+                    background-color: #1C1C1C;
+                    width: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                    border: none;
+                    height: 40px;
+                    box-shadow: 0px 8px 12px 0px #00000029;
+                    transition: .3s;
+
+                    &:hover {
+                        background-color: #FF4863;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                display: flex;
+                gap: 16px;
+
+                a {
+                    width: 170px;
+                    justify-content: center;
+                    text-wrap: nowrap;
+                    text-align: center;
+                    background-color: #1C1C1C;
+                    color: #fff;
+
+                    &:hover {
+                        background-color: #FF4863;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #contactoModal,
+    #contactoModal article {
+        transition: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .buttonContacto {
+        height: 32px;
+        font-size: 11px;
+    }
+}
