@@ -1,12 +1,14 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { preload } from 'react-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ButtonContacto } from '@/app/components';
 import './homeHeader.scss';
 
 export const HomeHeader = () => {
+    preload('/home/homeHeader.avif', { as: 'image', fetchPriority: 'high' });
     const sectionRef = useRef(null);
     const panelRef = useRef(null);
     const articleRef = useRef(null);
@@ -56,7 +58,7 @@ export const HomeHeader = () => {
     return <header id='homeHeader' ref={sectionRef}>
         <div className='homeHeaderSticky'>
         <div className='homeHeaderPanel' ref={panelRef}>
-            <video src='/home/homeHeader.mp4' className='homeHeaderVideo' muted autoPlay playsInline loop />
+            <video src='/home/homeHeader.mp4' poster='/home/homeHeader.avif' className='homeHeaderVideo' muted autoPlay playsInline loop />
             <h1>Equipamiento médico y sistemas técnicos.</h1>
             <article ref={articleRef}>
                 <div>

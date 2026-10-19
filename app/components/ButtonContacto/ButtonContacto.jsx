@@ -1,16 +1,22 @@
 "use client";
 import Link from 'next/link';
 import './buttonContacto.scss';
-import { useState } from 'react';
+import { useState, useSyncExternalStore } from 'react';
+import { createPortal } from 'react-dom';
+
+const subscribe = () => () => {};
+const getClientSnapshot = () => true;
+const getServerSnapshot = () => false;
 
 export const ButtonContacto = ({ children }) => {
 
     const [showModal, setShowModal] = useState(false);
+    const isClient = useSyncExternalStore(subscribe, getClientSnapshot, getServerSnapshot);
 
-    return <><button onClick={()=>setShowModal(true)} className='buttonContacto'>
+    return <><button type='button' onClick={()=>setShowModal(true)} className='buttonContacto'>
         {children}
     </button>
-            <section id='contactoModal' className={showModal ? 'is-open' : ''} aria-hidden={!showModal}>
+            {isClient && createPortal(<section id='contactoModal' className={showModal ? 'is-open' : ''} aria-hidden={!showModal} inert={!showModal} role='dialog' aria-modal='true' aria-label='Contacto'>
                 <article>
                     <div>
                         <h3>Contacto</h3>
@@ -25,7 +31,7 @@ export const ButtonContacto = ({ children }) => {
                         <Link target='_blank' href='https://wa.me/5491159208916?text=Hola%21' className='buttonContacto'>Empleo</Link>
                     </div>
                 </article>
-            </section>
+            </section>, document.body)}
 
     </>
 }

@@ -234,7 +234,7 @@
         backdrop-filter: blur(4px);
         left: 0;
         padding: 16px;
-        height: calc(100svh - 64px);
+        height: calc(100vh - 64px);
         animation: menuMobileFadeIn .25s ease-out;
 
         &.menuMobileClosing {
