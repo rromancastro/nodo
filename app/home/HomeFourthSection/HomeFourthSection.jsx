@@ -10,27 +10,27 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const cards = [
     {
         "p": "Gases Medicinales",
-        "imgSrc": "/home/GasesMedicinales.png",
+        "imgSrc": "/home/GasesMedicinales.avif",
         "href": "/"
     },
     {
         "p": "Puertas Automáticas",
-        "imgSrc": "/home/PuertasAutomaticas.png",
+        "imgSrc": "/home/PuertasAutomaticas.avif",
         "href": "/"
     },
     {
         "p": "Sistemas neumáticos",
-        "imgSrc": "/home/CorreoNeumatico.png",
+        "imgSrc": "/home/CorreoNeumatico.avif",
         "href": "/"
     },
     {
         "p": "Policanales",
-        "imgSrc": "/home/Policanales.png",
+        "imgSrc": "/home/Policanales.avif",
         "href": "/"
     },
     {
         "p": "Robótica",
-        "imgSrc": "/home/Robotica.png",
+        "imgSrc": "/home/Robotica.avif",
         "href": "/"
     },
 ]
@@ -135,7 +135,7 @@ export const HomeFourthSection = () => {
                         }}
                         onTransitionEnd={(event) => finishCardTransition(event, index)}
                     >
-                        <Image src={card.imgSrc} alt='Imagen Producto' height={1000} width={1000} />
+                        <Image unoptimized src={card.imgSrc} alt='Imagen Producto' height={1000} width={1000} />
                         <div style={{ '--card-opacity': cardSelected === index ? 1 : 0 }}>
                             <p>
                                 {card.p}

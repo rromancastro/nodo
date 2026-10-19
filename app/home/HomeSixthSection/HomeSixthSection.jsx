@@ -35,7 +35,7 @@ export const HomeSixthSection = () => {
     return <section id='homeSixthSection'>
         <div id='homeSixthSectionContent' ref={contentRef}>
             <div className='homeSixthSectionImage'>
-                <Image ref={imageRef} src={'/home/homeSixthSection.png'} alt='Grupo Planificando' height={500} width={500} />
+                <Image unoptimized ref={imageRef} src={'/home/homeSixthSection.avif'} alt='Grupo Planificando' height={500} width={500} />
             </div>
 
             <div className='homeSixthSectionText'>

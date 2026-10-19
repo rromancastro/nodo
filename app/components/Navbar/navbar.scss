@@ -22,6 +22,8 @@
 
     img {
         transition: .5s;
+        width: 133px;
+        height: auto;
 
         &:hover {
             transform: translateY(-2px);
@@ -129,6 +131,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 64px;
+
+    img {
+        width: 133px;
+        height: auto;
+    }
 
     .menubutton {
         background-color: #DDDDDD;

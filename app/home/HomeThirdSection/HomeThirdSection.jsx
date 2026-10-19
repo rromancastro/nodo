@@ -7,12 +7,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const projects = [
-    { image: '/home/proyecto1.jpg', name: 'Hospital Universitario Austral', period: '2022-2026', href: '/' },
-    { image: '/home/proyecto2.jpg', name: 'Hospital Fernández', period: '2025', href: '/' },
-    { image: '/home/proyecto3.jpeg', name: 'Hospital Municipal Dr. Bernardo Houssay', period: '2025', href: '/' },
-    { image: '/home/proyecto4.png', name: 'Sanatorio Itoiz', period: '2024', href: '/' },
-    { image: '/home/proyecto5.jpg', name: 'Sanatorio Güemes', period: '2021', href: '/' },
-    { image: '/home/proyecto6.jpg', name: 'Hospital Municipal Santa Marina ', period: '2019', href: '/' },
+    { image: '/home/proyecto1.avif', name: 'Hospital Universitario Austral', period: '2022-2026', href: '/' },
+    { image: '/home/proyecto2.avif', name: 'Hospital Fernández', period: '2025', href: '/' },
+    { image: '/home/proyecto3.avif', name: 'Hospital Municipal Dr. Bernardo Houssay', period: '2025', href: '/' },
+    { image: '/home/proyecto4.avif', name: 'Sanatorio Itoiz', period: '2024', href: '/' },
+    { image: '/home/proyecto5.avif', name: 'Sanatorio Güemes', period: '2021', href: '/' },
+    { image: '/home/proyecto6.avif', name: 'Hospital Municipal Santa Marina ', period: '2019', href: '/' },
 ];
 
 export const HomeThirdSection = () => {
@@ -88,7 +88,7 @@ export const HomeThirdSection = () => {
                         aria-roledescription='diapositiva'
                         aria-label={`${index + 1} de ${projects.length}`}
                     >
-                        <Image src={project.image} alt={`Proyecto ${index + 1} — ${project.name}`} width={417} height={417} />
+                        <Image unoptimized src={project.image} alt={`Proyecto ${index + 1} — ${project.name}`} width={417} height={417} />
                         <div>
                             <p>
                                 <span>{project.name}</span>

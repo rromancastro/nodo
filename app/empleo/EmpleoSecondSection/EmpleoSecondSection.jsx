@@ -92,13 +92,13 @@ export const EmpleoSecondSection = () => {
                 Trabajemos juntos
             </SplitH2>
             <SplitP id='empleoSecondSectionText1'>
-                Trabajamos para que las infraestructuras de mayor exigencia funcionen con seguridad, precisión y continuidad.
+                Nos esmeramos para que las infraestructuras de mayor exigencia funcionen con seguridad, precisión y continuidad.
             </SplitP>
             <SplitP id='empleoSecondSectionText2'>
                 Buscamos personas comprometidas con la ingeniería, la innovación y el trabajo en equipo, que quieran desarrollar su carrera participando en proyectos para entornos de alto impacto junto a profesionales especializados.
             </SplitP>
             <SplitP id='empleoSecondSectionText3'>
-                Disponemos de una línea de Whastaspp especifica para contactarnos en caso de tener dudas o necesitar hablar con un representante.
+                Si querés conversar con nuestro equipo de selección para postularte o realizar una consulta, escribinos por WhatsApp.
             </SplitP>
             <Link href='https://wa.me/5491126110033?text=Hola%21%20Estoy%20interesado%20en%20mas%20informaci%C3%B3n' target='_blank' className='buttonContacto'>
                 Contacto

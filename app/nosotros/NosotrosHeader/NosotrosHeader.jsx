@@ -7,6 +7,6 @@ export const NosotrosHeader = () => {
         <SplitH1 id={'nosotrosHeaderTitle'}>
             Diseño. Excelencia. Seguridad.
         </SplitH1>
-        <ParallaxImage className="headerImage" src={'/nosotros/header.png'} alt='Imagen de tecnologia' />
+        <ParallaxImage className="headerImage" src={'/nosotros/header.avif'} alt='Imagen de tecnologia' />
     </section>
 }

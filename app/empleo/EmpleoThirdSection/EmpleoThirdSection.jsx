@@ -7,10 +7,10 @@ export const EmpleoThirdSection = () => {
         <article>
             <video src="/empleo/thirdSection.webm" muted loop playsInline autoPlay></video>
             <SplitH2 id={'empleoThirdSectionTitle'}>
-                Conocé nuestro trabajo.
+                Conocé nuestros proyectos.
             </SplitH2>
             <SplitP id={'empleoThirdSectionText'}>
-                Lorem ipsum dolor sit amet consectetur. Amet luctus nunc facilisis sem mauris fames nunc. Aliquet eleifend nullam id pellentesque facilisis augue. Fusce mauris sollicitudin elementum ut eget. Sed augue feugiat ipsum morbi sed.
+                Participamos en el desarrollo de más de 20 hospitales argentinos y trabajamos con empresas de referencia como Sodimac y Falabella.
             </SplitP>
             <Link href='/proyectos' className='buttonContacto'>
                 Ver proyectos

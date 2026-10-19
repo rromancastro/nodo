@@ -7,6 +7,6 @@ export const EmpleoHeader = () => {
         <SplitH1 id={'empleoHeaderTitle'}>
             Empleo
         </SplitH1>
-        <ParallaxImage className="headerImage" src={'/empleo/header.png'} alt='Imagen de tecnologia' />
+        <ParallaxImage className="headerImage" src={'/empleo/header.avif'} alt='Imagen de tecnologia' />
     </section>
 }

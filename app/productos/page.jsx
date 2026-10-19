@@ -1,6 +1,9 @@
 import { ProductosHeader } from ".";
 import { Footer, Navbar, ProductosCategoriaComponent } from "../components";
 import { HomeFifthSection } from "../home";
+import { createPageMetadata } from '../seo';
+
+export const metadata = createPageMetadata('/productos', 'Productos y sistemas técnicos | NODO');
 
 const puertasAutomaticasProdList = [
     {

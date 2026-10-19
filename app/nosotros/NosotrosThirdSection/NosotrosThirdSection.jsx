@@ -16,7 +16,7 @@ const Card = ({ title, country, imageSrc, p1, p2, title2 }) => {
             <p>{country}</p>
         </div>
         <div className='nosotrosCardContainer'>
-            <Image src={imageSrc} alt='Imagen Card' width={300} height={300} />
+            <Image unoptimized src={imageSrc} alt='Imagen Card' width={300} height={300} />
             <p>{p1}</p>
             {
                 p2 && <p>{p2}</p>
@@ -29,40 +29,40 @@ const cardData = [
     {
         title: 'Sumetzberger',
         country: 'Austria',
-        imageSrc: '/nosotros/card1.png',
+        imageSrc: '/nosotros/card1.avif',
         p1: 'Compañía líder en sistemas de correo neumático con más de 100 años de vigencia.',
         p2: 'En nuestro portfolio hemos incluido transporte neumático, robots autónomos y soluciones de automatización pensadas para edificios industriales, comerciales y sanitarios.'
     },
     {
         title: 'Master Ingenieros',
         country: 'España',
-        imageSrc: '/nosotros/card2.png',
+        imageSrc: '/nosotros/card2.avif',
         p1: 'Introducimos en el país sus soluciones automatizadas para puertas. Los accesos peatonales y herméticos fueron diseñados para favorecer la asepsia de los espacios y su adecuado aislamiento acústico.',
     },
     {
         title: 'Grupo',
         title2: 'Legrand - Neat',
         country: 'España',
-        imageSrc: '/nosotros/card3.png',
+        imageSrc: '/nosotros/card3.avif',
         p1: 'Especialista mundial en infraestructuras eléctricas y digitales desde 1988.',
         p2: 'Nuestra alianza con Neat y Grupo Legrand radica en los llamados de enfermería, dispositivos que garantizan el bienestar del paciente a través de la gestión inteligente de alarmas.'
     },
     {
         title: 'Sensio - ISECO',
         country: 'España, Portugal, Reino unido',
-        imageSrc: '/nosotros/card4.png',
+        imageSrc: '/nosotros/card4.avif',
         p1: 'Nuestra unión se forja en el mutuo interés por optimizar la comunicación asistencial. Los sistemas paciente-enfermera de ISECO permiten gestionar y automatizar grupos de llamadas y alarmas, agilizando los tiempos de respuesta para una atención más coordinada y eficiente.'
     },
     {
         title: 'Oxair',
         country: 'Estados Unidos',
-        imageSrc: '/nosotros/card5.png',
+        imageSrc: '/nosotros/card5.avif',
         p1: 'Los gases medicinales son un recurso esencial para el funcionamiento hospitalario. Por ello, ofrecemos generadores de oxígeno de alta pureza que aseguran un suministro continuo y fiable, de la mano de OXAIR, fabricante y proveedor a escala mundial.'
     },
     {
         title: 'ASP Lab Automation',
         country: 'Alemania',
-        imageSrc: '/nosotros/card6.png',
+        imageSrc: '/nosotros/card6.avif',
         p1: 'Nuestra cartera de productos incorpora robots de automatización para mejorar la recepción, clasificación, distribución y procesamiento de muestras. Trabajamos junto a una compañía con más de 10 años de experiencia en el desarrollo de estaciones inteligentes para laboratorios.'
     },
 ]

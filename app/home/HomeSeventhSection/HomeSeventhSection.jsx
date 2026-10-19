@@ -10,7 +10,7 @@ export const HomeSeventhSection = () => {
                 Somos un equipo de ingenieros y técnicos con un propósito claro: desarrollar entornos más sostenibles y productivos.
             </SplitH3>
             <div id='homeSeventhSectionImageContainer'>
-                <Image src={'/home/homeSeventhSection.png'} alt='Trabajadores' height={500} width={500} />
+                <Image src={'/home/homeSeventhSection.avif'} alt='Trabajadores' height={500} width={500} />
             </div>
             <div id='homeSeventhSectionCard'>
                 <h3>Trabajemos juntos.</h3>
