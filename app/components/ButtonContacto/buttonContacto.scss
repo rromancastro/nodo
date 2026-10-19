@@ -118,3 +118,28 @@
         font-size: 11px;
     }
 }
+
+@media (max-width: 606px) {
+    #contactoModal {
+        article {
+            >div {
+                &:nth-child(1) {
+                    gap: 8px;
+                    h3 {
+                        font-size: 28px;
+                    }
+
+                    button {
+                        width: 32px;
+                        height: 32px;
+                        padding: 6px;
+                    }
+                }
+                &:nth-child(2) {
+                    flex-direction: column;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+}

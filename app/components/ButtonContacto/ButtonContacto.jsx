@@ -20,9 +20,9 @@ export const ButtonContacto = ({ children }) => {
                         </button>
                     </div>
                     <div>
-                        <Link href='/' className='buttonContacto'>Cotizar un proyecto</Link>
-                        <Link href='/' className='buttonContacto'>Guardias técnicas</Link>
-                        <Link href='/' className='buttonContacto'>Empleo</Link>
+                        <Link target='_blank' href='https://wa.me/5491126110033?text=Hola%21' className='buttonContacto'>Cotizar un proyecto</Link>
+                        <Link target='_blank' href='https://wa.me/5491133966679?text=Hola%21' className='buttonContacto'>Guardias técnicas</Link>
+                        <Link target='_blank' href='https://wa.me/5491159208916?text=Hola%21' className='buttonContacto'>Empleo</Link>
                     </div>
                 </article>
             </section>

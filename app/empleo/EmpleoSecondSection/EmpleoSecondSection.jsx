@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { SplitH2, SplitP } from '@/app/components';
 import './empleoSecondSection.scss';
 import Link from 'next/link';
@@ -21,8 +21,13 @@ const getCallingCode = (country) => {
 };
 
 const jobOptions = [
-    { value: 'puesto-1', label: 'Opción 1' },
-    { value: 'puesto-2', label: 'Opción 2' },
+    { value: 'puesto-1', label: 'Servicio técnico' },
+    { value: 'puesto-2', label: 'Instalaciones' },
+    { value: 'puesto-3', label: 'Ventas' },
+    { value: 'puesto-4', label: 'Producción' },
+    { value: 'puesto-5', label: 'Logística' },
+    { value: 'puesto-6', label: 'Oficina técnica' },
+    { value: 'puesto-7', label: 'Diseño' },
 ];
 
 export const EmpleoSecondSection = () => {
@@ -33,6 +38,22 @@ export const EmpleoSecondSection = () => {
     const [countryLoadFailed, setCountryLoadFailed] = useState(false);
     const [selectedJob, setSelectedJob] = useState('');
     const [isJobListOpen, setIsJobListOpen] = useState(false);
+    const countrySelectorRef = useRef(null);
+    const jobSelectorRef = useRef(null);
+
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (!countrySelectorRef.current?.contains(event.target)) {
+                setIsCountryListOpen(false);
+            }
+            if (!jobSelectorRef.current?.contains(event.target)) {
+                setIsJobListOpen(false);
+            }
+        };
+
+        document.addEventListener('pointerdown', handleOutsideClick, true);
+        return () => document.removeEventListener('pointerdown', handleOutsideClick, true);
+    }, []);
 
     useEffect(() => {
         let isMounted = true;
@@ -91,7 +112,7 @@ export const EmpleoSecondSection = () => {
                 <input type="text" placeholder="Nombre" />
                 <input type="email" placeholder="E-mail" />
                 <div className='contactoNumero'>
-                    <div className='contactoCountrySelector'>
+                    <div className='contactoCountrySelector' ref={countrySelectorRef}>
                         <button
                             type='button'
                             aria-label={`País seleccionado: ${getCountryName(selectedCountry)}, ${getCallingCode(selectedCountry)}. Elegir país`}
@@ -129,7 +150,7 @@ export const EmpleoSecondSection = () => {
 
                     <input type="text" placeholder='Whatsapp' />
                 </div>
-                <div className='contactoPuestoSelector'>
+                <div className='contactoPuestoSelector' ref={jobSelectorRef}>
                     <input type='hidden' name='puestolaboral' value={selectedJob} />
                     <button
                         id='puestolaboral'

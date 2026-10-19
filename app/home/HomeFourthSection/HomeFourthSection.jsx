@@ -39,10 +39,41 @@ export const HomeFourthSection = () => {
 
     const [cardSelected, setCardSelected] = useState(0);
     const sectionRef = useRef(null);
+    const isCardAnimating = useRef(false);
+    const pendingCard = useRef(null);
+
+    const selectCard = (index) => {
+        if (isCardAnimating.current) {
+            pendingCard.current = index;
+            return;
+        }
+        if (index === cardSelected) return;
+
+        isCardAnimating.current = true;
+        setCardSelected(index);
+    };
+
+    const finishCardTransition = (event, index) => {
+        if (event.target !== event.currentTarget || event.propertyName !== 'flex-grow' || index !== cardSelected) return;
+
+        isCardAnimating.current = false;
+        const nextCard = pendingCard.current;
+        pendingCard.current = null;
+        if (nextCard !== null) selectCard(nextCard);
+    };
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         const media = gsap.matchMedia();
+        const cardsContainer = sectionRef.current.querySelector('#homeFourthSectionCards');
+        const resizeObserver = new ResizeObserver(([entry]) => {
+            const styles = window.getComputedStyle(cardsContainer);
+            const gap = parseFloat(styles.columnGap) || 0;
+            const cardBasis = parseFloat(window.getComputedStyle(cardsContainer.firstElementChild).flexBasis) || 132;
+            const expandedWidth = Math.max(cardBasis, entry.contentRect.width - (cards.length - 1) * (cardBasis + gap));
+            cardsContainer.style.setProperty('--card-image-width', `${expandedWidth}px`);
+        });
+        resizeObserver.observe(cardsContainer);
 
         media.add('(max-width: 990px)', () => {
             const section = sectionRef.current;
@@ -71,7 +102,10 @@ export const HomeFourthSection = () => {
             return () => gsap.set(articles, { clearProps: 'transform' });
         });
 
-        return () => media.revert();
+        return () => {
+            resizeObserver.disconnect();
+            media.revert();
+        };
     }, []);
 
     return <section id='homeFourthSection' ref={sectionRef}>
@@ -95,7 +129,11 @@ export const HomeFourthSection = () => {
                             '--card-filter': cardSelected === index ? 'none' : 'grayscale(1) brightness(.7)',
                             '--card-index': index,
                         }}
-                        onMouseEnter={() => setCardSelected(index)}
+                        onMouseEnter={() => selectCard(index)}
+                        onMouseLeave={() => {
+                            if (pendingCard.current === index) pendingCard.current = null;
+                        }}
+                        onTransitionEnd={(event) => finishCardTransition(event, index)}
                     >
                         <Image src={card.imgSrc} alt='Imagen Producto' height={1000} width={1000} />
                         <div style={{ '--card-opacity': cardSelected === index ? 1 : 0 }}>

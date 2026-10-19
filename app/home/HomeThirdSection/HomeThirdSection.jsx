@@ -1,6 +1,6 @@
 ﻿'use client';
 
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Carousel, SplitH2, SplitP } from '@/app/components';
 import './homeThirdSection.scss';
 import Link from 'next/link';
@@ -17,7 +17,30 @@ const projects = [
 
 export const HomeThirdSection = () => {
     const [selectedIndex, setSelectedIndex] = useState(0);
+    const [autoplayReset, setAutoplayReset] = useState(0);
     const mobileCarouselRef = useRef(null);
+
+    useEffect(() => {
+        const timeout = window.setTimeout(() => {
+            const nextIndex = (selectedIndex + 1) % projects.length;
+            const carousel = mobileCarouselRef.current;
+            const nextCard = carousel?.querySelectorAll('.homeThirdSectionCard')[nextIndex];
+
+            if (carousel?.clientWidth && nextCard) {
+                carousel.scrollTo({
+                    left: carousel.scrollLeft + nextCard.getBoundingClientRect().left
+                        + nextCard.offsetWidth / 2 - carousel.getBoundingClientRect().left
+                        - carousel.clientWidth / 2,
+                    behavior: 'smooth',
+                });
+            }
+
+            setSelectedIndex(nextIndex);
+        }, 3000);
+
+        return () => window.clearTimeout(timeout);
+    }, [selectedIndex, autoplayReset]);
+
     const move = (direction) => {
         setSelectedIndex((index) => (index + direction + projects.length) % projects.length);
     };
@@ -96,6 +119,8 @@ export const HomeThirdSection = () => {
                     className='homeThirdSectionCarouselMobileImages'
                     ref={mobileCarouselRef}
                     onScroll={updateMobileIndex}
+                    onPointerDown={() => setAutoplayReset((reset) => reset + 1)}
+                    onWheel={() => setAutoplayReset((reset) => reset + 1)}
                     role='region'
                     aria-roledescription='carrusel'
                     aria-label='Proyectos'
