@@ -136,7 +136,7 @@ export const HomeThirdSection = () => {
                                     <span>{project.name}</span>
                                     {project.period}
                                 </p>
-                                <Link href={project.href} className='buttonContacto'>Ver más</Link>
+                                <Link href={project.href} className='buttonContacto disabled'>Ver más</Link>
                             </div>
                         </article>;
                     })}
