@@ -14,13 +14,13 @@ export function createPageMetadata(path, title = siteTitle, description = siteDe
             url: path,
             title,
             description,
-            images: [{ url: '/home/homeHeader.png', alt: siteTitle }],
+            images: [{ url: '/og-image.png', width: 1424, height: 768, alt: siteTitle }],
         },
         twitter: {
             card: 'summary_large_image',
             title,
             description,
-            images: ['/home/homeHeader.png'],
+            images: ['/og-image.png'],
         },
     };
 }
