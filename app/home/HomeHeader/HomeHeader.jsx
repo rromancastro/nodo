@@ -59,7 +59,7 @@ export const HomeHeader = () => {
         <div className='homeHeaderSticky'>
         <div className='homeHeaderPanel' ref={panelRef}>
             <video src='/home/homeHeader.mp4' poster='/home/homeHeader.avif' className='homeHeaderVideo' muted autoPlay playsInline loop />
-            <h1>Equipamiento médico y sistemas técnicos.</h1>
+            <h1>Equipamiento <br /> médico y sistemas <br /> técnicos.</h1>
             <article ref={articleRef}>
                 <div>
                     <p className='color-black'>Somos el único proveedor en implementar redes de gases medicinales, llamados de enfermería, puertas automáticas y correo neumático de manera conjunta.</p>
