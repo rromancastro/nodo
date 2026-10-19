@@ -20,8 +20,8 @@ export const HomeFifthSection = () => {
                     Solicitar mantenimiento
                 </Link>
             </div>
-            <Image className='homeFifthSectionImg' src={'/home/homeFifthSection.avif'} alt='Trabajador' height={500} width={500} />
-            <Image className='homeFifthSectionImgMobile' src={'/home/homeFifthSectionMobile.avif'} alt='Trabajador' height={500} width={500} />
+            <Image className='homeFifthSectionImg' src={'/home/HomeFifthSection.avif'} alt='Trabajador' height={500} width={500} />
+            <Image className='homeFifthSectionImgMobile' src={'/home/HomeFifthSectionMobile.avif'} alt='Trabajador' height={500} width={500} />
         </article>
     </section>
 }
