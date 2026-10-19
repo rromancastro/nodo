@@ -14,7 +14,7 @@ export const HomeSeventhSection = () => {
             </div>
             <div id='homeSeventhSectionCard'>
                 <h3>Trabajemos juntos.</h3>
-                <Link href={'/'} className='buttonContacto' >Postulaciones</Link>
+                <Link href={'/empleo'} className='buttonContacto' >Postulaciones</Link>
             </div>
         </div>
     </section>

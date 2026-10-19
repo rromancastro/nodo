@@ -53,7 +53,7 @@ export const HomeSixthSection = () => {
                     Nuestro conocimiento colabora con el sistema de salud del país.
                 </SplitP>
 
-                <Link href={'/'} className='buttonContacto'>Quiénes somos</Link>
+                <Link href={'/nosotros'} className='buttonContacto'>Quiénes somos</Link>
             </div>
         </div>
     </section>

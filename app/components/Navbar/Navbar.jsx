@@ -46,18 +46,18 @@ export const Navbar = () => {
                 </svg>
             </button>
             <div className='menuDrop'>
-                <Link href='/proyectos'>Proyectos <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/*<Link href='/proyectos'>Proyectos <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.499972 7.94545L7.6292 0.816215C7.42672 0.613814 7.15216 0.500074 6.86587 0.499982L1.07082 0.499982M7.94543 7.3746L7.94544 1.57955C7.94507 1.29336 7.83116 1.019 7.62869 0.816724" stroke="#2B2A26" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                </Link>
+                </Link>*/}
                 <Link href='/nosotros'>Nosotros <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.499972 7.94545L7.6292 0.816215C7.42672 0.613814 7.15216 0.500074 6.86587 0.499982L1.07082 0.499982M7.94543 7.3746L7.94544 1.57955C7.94507 1.29336 7.83116 1.019 7.62869 0.816724" stroke="#2B2A26" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 </Link>
-                <Link href='/productos'>Productos <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/*<Link href='/productos'>Productos <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.499972 7.94545L7.6292 0.816215C7.42672 0.613814 7.15216 0.500074 6.86587 0.499982L1.07082 0.499982M7.94543 7.3746L7.94544 1.57955C7.94507 1.29336 7.83116 1.019 7.62869 0.816724" stroke="#2B2A26" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                </Link>
+                </Link>*/}
                 <Link href='/empleo'>Empleo <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.499972 7.94545L7.6292 0.816215C7.42672 0.613814 7.15216 0.500074 6.86587 0.499982L1.07082 0.499982M7.94543 7.3746L7.94544 1.57955C7.94507 1.29336 7.83116 1.019 7.62869 0.816724" stroke="#2B2A26" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
@@ -97,18 +97,18 @@ export const Navbar = () => {
                 <div id='menuDropMobileContent'>
                     <h3>Menu</h3>
                     <div>
-                        <Link className='navLinkMobile' href='/proyectos'>Proyectos <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        {/*<Link className='navLinkMobile' href='/proyectos'>Proyectos <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.499972 7.94545L7.6292 0.816215C7.42672 0.613814 7.15216 0.500074 6.86587 0.499982L1.07082 0.499982M7.94543 7.3746L7.94544 1.57955C7.94507 1.29336 7.83116 1.019 7.62869 0.816724" stroke="#2B2A26" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
-                        </Link>
+                        </Link>*/}
                         <Link className='navLinkMobile' href='/nosotros'>Nosotros <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.499972 7.94545L7.6292 0.816215C7.42672 0.613814 7.15216 0.500074 6.86587 0.499982L1.07082 0.499982M7.94543 7.3746L7.94544 1.57955C7.94507 1.29336 7.83116 1.019 7.62869 0.816724" stroke="#2B2A26" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         </Link>
-                        <Link className='navLinkMobile' href='/productos'>Productos <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        {/*<Link className='navLinkMobile' href='/productos'>Productos <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.499972 7.94545L7.6292 0.816215C7.42672 0.613814 7.15216 0.500074 6.86587 0.499982L1.07082 0.499982M7.94543 7.3746L7.94544 1.57955C7.94507 1.29336 7.83116 1.019 7.62869 0.816724" stroke="#2B2A26" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
-                        </Link>
+                        </Link>*/}
                         <Link className='navLinkMobile' href='/empleo'>Empleo <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.499972 7.94545L7.6292 0.816215C7.42672 0.613814 7.15216 0.500074 6.86587 0.499982L1.07082 0.499982M7.94543 7.3746L7.94544 1.57955C7.94507 1.29336 7.83116 1.019 7.62869 0.816724" stroke="#2B2A26" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>

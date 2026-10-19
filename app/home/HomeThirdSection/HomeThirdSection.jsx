@@ -68,7 +68,7 @@ export const HomeThirdSection = () => {
                 <SplitP id='homeThirdSectionP'>
                     Hemos trabajado para más de 20 instituciones, siendo parte de ellas, los principales referentes hospitalarios de Argentina.
                 </SplitP>
-                <Link href='/' className='buttonContacto'>Ver más</Link>
+                <Link href='/' className='buttonContacto disabled'>Ver más</Link>
             </div>
 
             <div className='homeThirdSectionCarouselDesktop' role='region' aria-roledescription='carrusel' aria-label='Proyectos'>
@@ -94,7 +94,7 @@ export const HomeThirdSection = () => {
                                 <span>{project.name}</span>
                                 {project.period}
                             </p>
-                            <Link href={project.href} className='buttonContacto'>Ver más</Link>
+                            <Link href={project.href} className='buttonContacto disabled'>Ver más</Link>
                         </div>
                     </article>;
                 })}

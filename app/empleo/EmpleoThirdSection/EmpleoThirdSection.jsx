@@ -12,7 +12,7 @@ export const EmpleoThirdSection = () => {
             <SplitP id={'empleoThirdSectionText'}>
                 Participamos en el desarrollo de más de 20 hospitales argentinos y trabajamos con empresas de referencia como Sodimac y Falabella.
             </SplitP>
-            <Link href='/proyectos' className='buttonContacto'>
+            <Link href='/proyectos' className='buttonContacto disabled'>
                 Ver proyectos
             </Link>
         </article>

@@ -117,7 +117,7 @@ export const HomeFourthSection = () => {
             <SplitP id='homeFourthSectionNavSubtitle'>
                 Equipamiento y aparatología hospitalaria, sistemas de automatización estándar y personalizados.
             </SplitP>
-            <Link href='/' className='buttonContacto'>Ver más</Link>
+            <Link href='/' className='buttonContacto  disabled'>Ver más</Link>
         </div>
         <div id='homeFourthSectionCards'>
             {
@@ -140,7 +140,7 @@ export const HomeFourthSection = () => {
                             <p>
                                 {card.p}
                             </p>
-                            <Link href={card.href} className='buttonContacto'>Ver más</Link>
+                            <Link href={card.href} className='buttonContacto disabled'>Ver más</Link>
                         </div>
                     </article>
                 ))
