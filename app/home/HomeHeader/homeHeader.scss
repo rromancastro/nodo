@@ -89,9 +89,10 @@
             }
 
             >h1 {
-                font-size: 40px;
+                font-size: 40px !important;
                 max-width: 329px;
                 letter-spacing: -4%;
+                left: 16px;
                 text-indent: 80px;
             }
         }
