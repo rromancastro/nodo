@@ -31,6 +31,6 @@ export const ParallaxImage = ({ src, alt, className = '' }) => {
     }, []);
 
     return <div ref={containerRef} className={`parallaxImage ${className}`}>
-        <Image unoptimized ref={imageRef} src={src} alt={alt} width={1000} height={1000} />
+        <Image priority unoptimized ref={imageRef} src={src} alt={alt} width={1000} height={1000} />
     </div>;
 };
