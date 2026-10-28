@@ -1,8 +1,5 @@
-import { ProyectoPage } from "@/app/components";
-import { createPageMetadata } from '../../seo';
+import { redirect } from 'next/navigation';
 
-export const metadata = createPageMetadata('/proyectos/hospital', 'Proyecto hospitalario | NODO');
-
-export default function Hospital1() {
-    return <ProyectoPage />
+export default function Hospital() {
+    redirect('/proyectos/hospital-universitario-austral');
 }

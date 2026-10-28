@@ -6,45 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GoArrowUpRight } from 'react-icons/go';
 
-const proyectos = [
-    {
-        "imgUrl": "/proyectos/1.png",
-        "text1": "Hospital Italiano",
-        "text2": " 2025- 2026 Buenos Aires, Argentina",
-        "href": "/"
-    },
-    {
-        "imgUrl": "/proyectos/2.png",
-        "text1": "Hospital Italiano",
-        "text2": " 2025- 2026 Buenos Aires, Argentina",
-        "href": "/"
-    },
-    {
-        "imgUrl": "/proyectos/1.png",
-        "text1": "Hospital Italiano",
-        "text2": " 2025- 2026 Buenos Aires, Argentina",
-        "href": "/"
-    },
-    {
-        "imgUrl": "/proyectos/2.png",
-        "text1": "Hospital Italiano",
-        "text2": " 2025- 2026 Buenos Aires, Argentina",
-        "href": "/"
-    },
-    {
-        "imgUrl": "/proyectos/1.png",
-        "text1": "Hospital Italiano",
-        "text2": " 2025- 2026 Buenos Aires, Argentina",
-        "href": "/"
-    },
-    {
-        "imgUrl": "/proyectos/2.png",
-        "text1": "Hospital Italiano",
-        "text2": " 2025- 2026 Buenos Aires, Argentina",
-        "href": "/"
-    },
-]
-
+import proyectos from '../proyectos.json';
 export const ProyectosSection = () => {
     const carouselRef = useRef(null);
     const [selectedIndex, setSelectedIndex] = useState(0);
@@ -70,14 +32,14 @@ export const ProyectosSection = () => {
         <div id='proyectosPrincipalesContainer'>
             {
                 proyectos.slice(0, 2).map((proyecto, index) => (
-                    <Link className='proyectoCard' href={proyecto.href} key={index}>
+                    <Link className='proyectoCard' href={`/proyectos/${proyecto.slug}`} key={proyecto.slug}>
                         <div>
-                            <Image src={proyecto.imgUrl} alt='Imagen Proyecto' width={400} height={400} />
+                            <Image unoptimized src={proyecto.imgUrl} alt={proyecto.institucion} width={400} height={400} />
                             <GoArrowUpRight />
                         </div>
                         <p>
-                            <span>{proyecto.text1}</span>
-                            {proyecto.text2}
+                            <span>{proyecto.institucion}</span>
+                            {`${proyecto.anio} · ${proyecto.ubicacion}`}
                         </p>
                     </Link>
                 ))
@@ -86,14 +48,14 @@ export const ProyectosSection = () => {
         <div id='proyectosContainer' ref={carouselRef} onScroll={updateCarouselIndex}>
             {
                 proyectos.slice(2).map((proyecto, index) => (
-                    <Link className='proyectoCard' href={proyecto.href} key={index}>
+                    <Link className='proyectoCard' href={`/proyectos/${proyecto.slug}`} key={proyecto.slug}>
                         <div>
-                            <Image src={proyecto.imgUrl} alt='Imagen Proyecto' width={400} height={400} />
+                            <Image unoptimized src={proyecto.imgUrl} alt={proyecto.institucion} width={400} height={400} />
                             <GoArrowUpRight />
                         </div>
                         <p>
-                            <span>{proyecto.text1}</span>
-                            {proyecto.text2}
+                            <span>{proyecto.institucion}</span>
+                            {`${proyecto.anio} · ${proyecto.ubicacion}`}
                         </p>
                     </Link>
                 ))
@@ -102,7 +64,7 @@ export const ProyectosSection = () => {
         <div className='proyectosCarouselIndex' aria-label='Índice de proyectos'>
             {proyectos.slice(2).map((proyecto, index) => (
                 <div
-                    key={index}
+                    key={proyecto.slug}
                     className={index === selectedIndex ? 'proyectosCarouselIndexSelected' : ''}
                     aria-current={index === selectedIndex ? 'true' : undefined}
                 />

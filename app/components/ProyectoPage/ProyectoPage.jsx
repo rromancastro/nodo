@@ -1,58 +1,58 @@
 import Image from 'next/image';
 import { ParallaxImage } from '../ParallaxImage/ParallaxImage';
-import { Footer, Navbar, SplitH1, SplitH2, SplitP } from '..';
+import { Footer, Navbar, SplitH1, SplitH2 } from '..';
 import './proyectoPage.scss';
 import Link from 'next/link';
 import { ProyectoPageFourthSection } from './ProyectoPageFourthSection';
 
-export const ProyectoPage = () => {
+export const ProyectoPage = ({ proyecto }) => {
     return <>
         <Navbar />
         <section className='proyectoPageHeader'>
             <SplitH1 id='proyectoPageHeaderH1'>
-                Hospital 1
+                {proyecto.institucion}
             </SplitH1>
 
             <div className='proyectoPageHero'>
                 <div className='proyectoPageHeroCards'>
                     <div className='proyectoPageHeroCard'>
-                        <SplitP id='proyectoPageHeroCardP1'>
-                            Cliente
-                        </SplitP>
-                        <SplitP id='proyectoPageHeroCardP2'>
-                            Hospital Italiano
-                        </SplitP>
+                        <p id='proyectoPageHeroCardP1'>
+                            Institución / obra
+                        </p>
+                        <p id='proyectoPageHeroCardP2'>
+                            {proyecto.institucion}
+                        </p>
                     </div>
 
                     <div className='proyectoPageHeroCard'>
-                        <SplitP id='proyectoPageHeroCardP3'>
-                            Tipo de proyecto
-                        </SplitP>
-                        <SplitP id='proyectoPageHeroCardP4'>
-                            Hospital Italiano
-                        </SplitP>
+                        <p id='proyectoPageHeroCardP3'>
+                            Sector
+                        </p>
+                        <p id='proyectoPageHeroCardP4'>
+                            {proyecto.sector}
+                        </p>
                     </div>
 
                     <div className='proyectoPageHeroCard'>
-                        <SplitP id='proyectoPageHeroCardP5'>
+                        <p id='proyectoPageHeroCardP5'>
                             Ubicación
-                        </SplitP>
-                        <SplitP id='proyectoPageHeroCardP6'>
-                            Ciudad Autónoma de  Buenos Aires, Argentina
-                        </SplitP>
+                        </p>
+                        <p id='proyectoPageHeroCardP6'>
+                            {proyecto.ubicacion}
+                        </p>
                     </div>
 
                     <div className='proyectoPageHeroCard'>
-                        <SplitP id='proyectoPageHeroCardP7'>
+                        <p id='proyectoPageHeroCardP7'>
                             Año
-                        </SplitP>
-                        <SplitP id='proyectoPageHeroCardP8'>
-                            2025- 2026
-                        </SplitP>
+                        </p>
+                        <p id='proyectoPageHeroCardP8'>
+                            {proyecto.anio}
+                        </p>
                     </div>
 
                 </div>
-                <ParallaxImage className='proyectoPageHeroImageContainer' src='/proyectos/1.png' alt='Hospital 1' />
+                <ParallaxImage className='proyectoPageHeroImageContainer' src={proyecto.imgUrl} alt={proyecto.institucion} />
             </div>
         </section>
 
@@ -61,23 +61,23 @@ export const ProyectoPage = () => {
                 <SplitH2 id='proyectoPageSecondSectionH2'>DETALLES DEL PROYECTO</SplitH2>
                 <div className='proyectoPageSecondSectionContent'>
                     <div className='proyectoPageSecondSectionCard'>
-                        <SplitP id='proyectoPageSecondSectionCardP1' >Descripción General</SplitP>
-                        <SplitP id='proyectoPageSecondSectionCardP2' >Lorem ipsum dolor sit amet consectetur. Amet luctus nunc facilisis sem mauris fames nunc. Aliquet eleifend nullam id pellentesque facilisis augue. Fusce mauris sollicitudin elementum ut eget. Sed augue feugiat ipsum morbi sed.</SplitP>
+                        <p id='proyectoPageSecondSectionCardP1' >Sistema / producto</p>
+                        <p id='proyectoPageSecondSectionCardP2' >{proyecto.sistema}</p>
                     </div>
 
                     <div className='proyectoPageSecondSectionCard'>
-                        <SplitP id='proyectoPageSecondSectionCardP3' >Colaboradores</SplitP>
-                        <SplitP id='proyectoPageSecondSectionCardP4' >Lorem ipsum dolor sit amet consectetur. Amet luctus nunc facilisis sem mauris fames nunc. Aliquet eleifend nullam id pellentesque facilisis augue. Fusce mauris sollicitudin elementum ut eget. Sed augue feugiat ipsum morbi sed.</SplitP>
+                        <p id='proyectoPageSecondSectionCardP3'>Descripción</p>
+                        <p id='proyectoPageSecondSectionCardP4'>{proyecto.descripcion}</p>
                     </div>
 
                     <div className='proyectoPageSecondSectionCard'>
-                        <SplitP id='proyectoPageSecondSectionCardP5' >Escala</SplitP>
-                        <SplitP id='proyectoPageSecondSectionCardP6' >8000m2</SplitP>
+                        <p id='proyectoPageSecondSectionCardP5' >Escala institución (m²)</p>
+                        <p id='proyectoPageSecondSectionCardP6' >{proyecto.escala}</p>
                     </div>
 
                     <div className='proyectoPageSecondSectionCard'>
-                        <SplitP id='proyectoPageSecondSectionCardP7' >Resultado</SplitP>
-                        <SplitP id='proyectoPageSecondSectionCardP8' >Lorem ipsum dolor sit amet consectetur. Amet luctus nunc facilisis sem mauris fames nunc. Aliquet eleifend nullam id pellentesque facilisis augue. Fusce mauris sollicitudin elementum ut eget. Sed augue feugiat ipsum morbi sed.</SplitP>
+                        <p id='proyectoPageSecondSectionCardP7' >Beneficios / criterio técnico</p>
+                        <p id='proyectoPageSecondSectionCardP8' >{proyecto.beneficios}</p>
                     </div>
                 </div>
             </section>
@@ -85,21 +85,21 @@ export const ProyectoPage = () => {
             <section className='proyectoPageThirdSection'>
                 <div>
                     <div>
-                        <Image src='/proyectos/2.png' alt='Hospital 1' width={500} height={500} />
-                        <p> 2025- 2026 Buenos Aires, Argentina</p>
+                        <Image unoptimized src={proyecto.thirdSectionFirstImage} alt={proyecto.institucion} width={500} height={500} />
+                        <p> {proyecto.anio} · {proyecto.ubicacion}</p>
                     </div>
 
-                    <SplitP id='proyectoPageThirdSectionP1' >Lorem ipsum dolor sit amet consectetur. Amet luctus nunc facilisis sem mauris fames nunc. Aliquet eleifend nullam id pellentesque facilisis augue. Fusce mauris sollicitudin elementum ut eget. Sed augue feugiat ipsum morbi sed.</SplitP>
+                    <p id='proyectoPageThirdSectionP1' >{proyecto.descripcion}</p>
                 </div>
 
-                <Image src='/proyectos/1.png' alt='Hospital 1' width={500} height={500} />
+                <Image unoptimized src={proyecto.thirdSectionImage} alt={proyecto.institucion} width={500} height={500} />
             </section>
 
-            <ProyectoPageFourthSection />
+            {proyecto.imagenes.length === 3 && <ProyectoPageFourthSection proyecto={proyecto} />}
 
             <section className='proyectoPageFifthSection'>
                 <article>
-                    <Image src='/proyectos/1.png' alt='Hospital 1' fill />
+                    <Image unoptimized src='/proyectos/1.avif' alt='Ver otros proyectos' fill />
                     <SplitH2 id='proyectoPageFifthSectionH2'>Ver otros proyectos</SplitH2>
                     <Link href='/proyectos' className='buttonContacto'>
                         Ver más

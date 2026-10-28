@@ -3,15 +3,14 @@
 import { useRef, useState } from 'react';
 import Image from 'next/image';
 
-const projectImages = ['/proyectos/1.png', '/proyectos/2.png', '/proyectos/2.png'];
-
-export const ProyectoPageFourthSection = () => {
+export const ProyectoPageFourthSection = ({ proyecto } = {}) => {
+    const projectImages = Array.isArray(proyecto?.imagenes) ? proyecto.imagenes : [];
     const carouselRef = useRef(null);
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     const updateSelectedIndex = () => {
         const carousel = carouselRef.current;
-        if (!carousel) return;
+        if (!carousel || projectImages.length === 0) return;
 
         const cards = carousel.querySelectorAll('.proyectoPageFourthSectionCard');
         const carouselCenter = carousel.getBoundingClientRect().left + carousel.clientWidth / 2;
@@ -23,6 +22,8 @@ export const ProyectoPageFourthSection = () => {
 
         setSelectedIndex(nearestIndex);
     };
+
+    if (projectImages.length === 0) return null;
 
     return <>
         <section
@@ -41,8 +42,8 @@ export const ProyectoPageFourthSection = () => {
                     aria-roledescription='diapositiva'
                     aria-label={`${index + 1} de ${projectImages.length}`}
                 >
-                    <Image src={src} alt='Hospital 1' width={500} height={500} />
-                    <p>2025-2026 Buenos Aires, Argentina</p>
+                    <Image unoptimized src={src} alt={proyecto.institucion} width={500} height={500} />
+                    <p>{proyecto.anio} · {proyecto.ubicacion}</p>
                 </article>
             ))}
         </section>

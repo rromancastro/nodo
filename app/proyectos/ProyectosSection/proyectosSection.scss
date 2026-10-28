@@ -201,3 +201,9 @@
         }
     }
 }
+
+.proyectoCard {
+    min-width: 0;
+
+    p { gap: 8px; flex-wrap: wrap; }
+}
