@@ -57,6 +57,13 @@
     }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    #homeHeader .homeHeaderPanel article {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     #homeHeader {
         height: 100vh;
