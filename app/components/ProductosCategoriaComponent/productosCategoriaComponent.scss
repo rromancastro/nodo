@@ -80,6 +80,12 @@
     flex: 0 0 280px;
 }
 
+.productoCard.productoCardPhoto .productoCardImageContainer {
+    overflow: hidden;
+    padding: 0;
+    > img { object-fit: cover; padding: 0; }
+}
+
 .productoCardTextContainer {
     display: flex;
     flex-direction: column;
@@ -90,15 +96,23 @@
             font-size: 20px;
             color: #1C1C1C;
             letter-spacing: -2%;
-            text-wrap: nowrap;
+            overflow-wrap: anywhere;
+            line-height: 1.2;
         }
         &:nth-child(2) {
             font-size: 14px;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
     }
 }
 
 .productoCardImageContainer {
+    > svg { position: absolute; top: 16px; left: 16px; z-index: 1; }
+    > img { object-fit: contain; padding: 24px; }
     width: 280px;
     height: 280px;
     box-shadow: 0px 4px 16px 0px #0000000F;
@@ -123,6 +137,9 @@
 }
 
 @media (max-width: 768px) {
+    .productosCategoriaComponent {
+    }
+
     .productosCategoryComponentInfo {
         flex-direction: column-reverse;
         margin-bottom: 24px;
@@ -148,6 +165,7 @@
         flex-wrap: wrap;
         overflow: visible;
         cursor: default;
+        margin-top: 24px;
 
         &.singleProduct {
             justify-content: center;
@@ -178,6 +196,7 @@
             scroll-snap-type: x mandatory;
             scrollbar-width: none;
             cursor: grab;
+            margin-top: 0;
             -webkit-overflow-scrolling: touch;
 
             &::-webkit-scrollbar {

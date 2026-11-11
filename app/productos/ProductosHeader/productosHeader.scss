@@ -1,3 +1,21 @@
-#productosHeader {
-    
+﻿#productosHeader {
+    height: 100vh;
+    padding: 96px 56px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    > .headerImage {
+        flex: 1;
+        min-height: 0;
+        height: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    #productosHeader { padding: 112px 32px 16px; }
+}
+
+@media (max-width: 768px) {
+    #productosHeader { padding: 96px 24px 16px; }
 }

@@ -1,0 +1,495 @@
+﻿.productoPage,
+.productosPage {
+    --productos-gutter: 56px;
+    --productos-section-gap: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--productos-section-gap);
+    margin: 0;
+    min-width: 0;
+
+    .productosCategoriaComponent {
+        padding-block: 0;
+        gap: 32px;
+    }
+
+    .productosCategoryComponentInfo {
+        padding-inline: var(--productos-gutter);
+    }
+
+    .productosCategoriaComponent>.productosCategoryComponentCarousel:not(.hasMobileCarousel) {
+        padding-inline: var(--productos-gutter);
+        padding-bottom: 16px;
+    }
+
+    .productosCategoryComponentCarouselIndex {
+        padding-inline: var(--productos-gutter);
+        margin-top: 0;
+    }
+
+    #homeFifthSection {
+        padding: 0 var(--productos-gutter);
+        min-width: 0;
+    }
+
+    .productosRelacionados {
+        --carousel-gutter: var(--productos-gutter);
+    }
+}
+
+.categoriaPageMedicinal {
+    padding-top: 160px;
+
+    .productoPageHero {
+        margin-bottom: 0;
+    }
+
+    .productoPageBackCategory {
+        font: inherit;
+    }
+
+    .medicinalCatalogue {
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        min-width: 0;
+    }
+
+    .productosCategoriaComponent {
+        gap: 56px;
+    }
+
+    .productosCategoryComponentHeading {
+        padding-inline: var(--productos-gutter);
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .productoCardTextContainer p:first-child {
+        line-height: 1;
+    }
+
+    .productoCardImageContainer {
+        position: relative;
+    }
+
+    .medicinalCatalogue .productoPageGroup .productosCategoriaComponent>.productosCategoryComponentCarousel {
+        padding-bottom: 0;
+    }
+
+    #homeFifthSection {
+        margin-top: 64px;
+    }
+}
+
+.productosPage {
+    padding-block: var(--productos-section-gap);
+}
+
+.productoPage {
+    padding: 96px 0 64px;
+
+    .productoPageHeader,
+    .productoPageList {
+        padding-inline: var(--productos-gutter);
+    }
+
+    &Header {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &Back {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #1c1c1c;
+
+        >.productoPageBackSeparator {
+            margin-inline: -8px;
+        }
+
+        a span {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            display: grid;
+            place-items: center;
+            background: #1c1c1c0f;
+            transition: background-color .5s;
+            border-radius: 4px;
+
+            img {
+                display: block;
+                transform: rotate(180deg);
+            }
+        }
+
+        a:hover span {
+            background: #1C1C1C29;
+        }
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    &Hero {
+        margin-bottom: 40px;
+        height: 600px;
+        border-radius: 8px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &List {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        min-width: 0;
+    }
+
+    &Group {
+        scroll-margin-top: 100px;
+
+        .productosCategoryComponentInfo>img {
+            object-fit: contain;
+            background: white;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .productoPage,
+    .productosPage {
+        --productos-gutter: 32px;
+        --productos-section-gap: 48px;
+
+        .productosCategoriaComponent {
+            gap: 24px;
+        }
+    }
+
+    .productoPage {
+        padding-block: 112px 48px;
+
+        &Hero {
+            height: 440px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .productoPage,
+    .productosPage {
+        --productos-gutter: 24px;
+        --productos-section-gap: 32px;
+
+        .productosCategoryComponentInfo {
+            margin-bottom: 0;
+
+            >div {
+                padding-right: 0;
+            }
+        }
+
+        .productosCategoriaComponent>.productosCategoryComponentCarousel.hasMobileCarousel {
+            padding-inline: max(var(--productos-gutter), calc((100% - 280px) / 2));
+            padding-bottom: 16px;
+        }
+    }
+
+    .productoPage {
+        padding-block: 96px 32px;
+
+        &Hero {
+            height: 260px;
+        }
+
+        &Back {
+            font-size: 24px;
+        }
+
+        &List {
+            gap: 24px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .categoriaPage,
+    .productoFichaPage {
+        --productos-gutter: 16px;
+        --productos-section-gap: 24px;
+        padding-block: 80px 48px;
+
+        .productoPageBack {
+            font-size: 28px;
+            line-height: 1;
+
+            a span {
+                width: 32px;
+                height: 32px;
+                background: #1c1c1c0f;
+            }
+        }
+
+        .productoPageHeader {
+            gap: 24px;
+        }
+
+        .productoPageHero {
+            height: auto;
+            aspect-ratio: 3 / 2;
+            margin: 0 0 24px;
+        }
+
+        .productoPageHeader>h1 {
+            padding-inline: 16px;
+        }
+
+        .productoPageList {
+            gap: 32px;
+        }
+
+        .productoPageList>h1 {
+            padding-inline: 16px;
+        }
+
+        .productoDetalle {
+            padding: 24px;
+            gap: 24px;
+            align-items: stretch;
+        }
+
+        .productoDetalleImage {
+            flex: none;
+            height: auto;
+            aspect-ratio: 3 / 2;
+            box-shadow: none;
+        }
+
+        .productoDetalleText {
+            flex: none;
+            gap: 24px;
+
+            h3,
+            h3 a {
+                line-height: 1;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 1.2;
+            }
+
+            >div {
+                gap: 16px;
+            }
+        }
+
+        #homeFifthSection {
+            padding-inline: 32px;
+            margin-top: 24px;
+
+            >article {
+                height: 460px;
+
+                >div {
+                    gap: 16px;
+                    background: linear-gradient(180deg, #1c1c1c00 0%, #1c1c1ce6 100%);
+
+                    h2 {
+                        font-size: 28px !important;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        line-height: 1.2;
+                    }
+
+                    a {
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .categoriaPage .productoPageBack {
+        display: grid;
+        grid-template-columns: 32px minmax(0, 1fr);
+        gap: 16px;
+        font-size: 32px;
+        line-height: 1.2;
+
+        >.productoPageBackSeparator {
+            display: none;
+        }
+
+        >.productoPageBackCategory {
+            grid-column: 1 / -1;
+        }
+    }
+
+    .categoriaPageMedicinal {
+        --productos-section-gap: 48px;
+
+        .productoPageHero {
+            aspect-ratio: 492 / 355;
+        }
+
+        .productoPageBack {
+            font-size: 28px;
+            line-height: 1;
+        }
+
+        .productoPageBackCategory {
+            font: inherit;
+        }
+
+        .medicinalCatalogue {
+            gap: 48px;
+        }
+
+        .productosCategoriaComponent {
+            gap: 24px;
+        }
+
+        .productosCategoryComponentHeading {
+            padding-inline: 32px;
+            font-size: 28px;
+        }
+
+        .productoPageHero {
+            margin-bottom: 0;
+        }
+
+        .productoPageHeader {
+            margin-bottom: -24px;
+        }
+
+        #homeFifthSection {
+            margin-top: 0;
+        }
+
+        .productoPageGroup {
+            .productosCategoriaComponent {
+                gap: 24px;
+            }
+
+            .productosCategoryComponentInfo {
+                padding-inline: 32px;
+                flex-direction: column;
+                gap: 16px;
+
+                >div {
+                    display: contents;
+                }
+
+                h2 {
+                    align-self: flex-start;
+                    text-align: left;
+                }
+
+                .buttonContacto {
+                    display: none;
+                }
+
+                >img {
+                    width: 100%;
+                    height: auto;
+                    aspect-ratio: 455 / 256;
+                }
+            }
+        }
+    }
+
+    .productosPage {
+        gap: 72px;
+    }
+
+    .productosPage,
+    .categoriaPageMedicinal .productoPageGroup {
+        .productosCategoriaComponent>.productosCategoryComponentCarousel:is(.hasMobileCarousel, .singleProduct) {
+            padding: 0 32px 16px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-padding-inline: 32px;
+
+            .productoCard {
+                flex: 0 0 calc((100vw - 80px) / 2);
+                width: auto;
+                transform: none;
+                scroll-snap-align: start;
+            }
+
+            .productoCardImageContainer {
+                aspect-ratio: 1;
+            }
+
+            .productoCard:not(.productoCardPhoto) .productoCardImageContainer>img {
+                padding: 12px;
+            }
+
+            .productoCardTextContainer p:first-child {
+                font-size: 20px;
+            }
+
+            .productoCardTextContainer p:nth-child(2) {
+                display: none;
+            }
+        }
+
+        .productosCategoryComponentCarouselIndex {
+            gap: 7px;
+            flex-wrap: wrap;
+        }
+    }
+
+    .productoFichaPage {
+        .productoPageList {
+            gap: 24px;
+            margin-top: 24px;
+        }
+
+        .productoDetalleMedicinal .productoDetalleImage {
+            flex: none;
+            height: auto;
+            aspect-ratio: 1;
+            box-shadow: 0 4px 16px #0000000f;
+        }
+
+        .productoDetalleText>div {
+            gap: 8px;
+        }
+
+        .productosRelacionados {
+            --carousel-gutter: 32px;
+            margin-top: 0;
+        }
+    }
+
+    .categoriaPage .productoDetalleImage {
+        aspect-ratio: auto;
+
+        img {
+            position: relative !important;
+            display: block;
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
+}

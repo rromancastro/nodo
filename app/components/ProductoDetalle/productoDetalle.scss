@@ -1,0 +1,20 @@
+.productoDetalle {
+    display: flex; align-items: center; gap: 80px; padding: 32px; background: #fff; border-radius: 8px; box-shadow: 0 8px 8px #00000014;
+    &Image { flex: 1; min-width: 0; height: 400px; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 16px #0000000f; img { object-fit: cover; } }
+    &Text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 24px;
+        h3, h3 a { font-size: 20px; font-weight: 600; color: #1c1c1c; line-height: 1.2; }
+        p { line-height: 1.4; white-space: normal; }
+        > div { display: flex; flex-direction: column; gap: 12px; }
+        > a { align-self: flex-start; }
+    }
+    .productoDetalleLabel { font-size: 12px; letter-spacing: 1.8px; text-transform: uppercase; }
+    &Inverted { flex-direction: row-reverse; }
+    &Medicinal .productoDetalleImage { flex: 0 0 400px; img { object-fit: contain; padding: 16px; } }
+}
+@media (max-width: 1024px) { .productoDetalle { gap: 32px; &Medicinal .productoDetalleImage { flex-basis: 40%; } } }
+@media (max-width: 768px) {
+    .productoDetalle { flex-direction: column; padding: 16px; gap: 24px;
+        &Image, &Medicinal .productoDetalleImage { width: 100%; flex: auto; height: 280px; }
+        &Text { width: 100%; }
+    }
+}

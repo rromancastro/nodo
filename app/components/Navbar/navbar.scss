@@ -32,10 +32,13 @@
 }
 
 .menuContainer {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 103px;
-    transition: .5s;
+    height: 40px;
+    flex-shrink: 0;
+    --menu-ease: cubic-bezier(.22, 1, .36, 1);
 
 
     .menubutton {
@@ -44,6 +47,7 @@
         box-shadow: 0px 8px 12px 0px #00000014;
         color: #1C1C1C;
         height: 40px;
+        flex-shrink: 0;
         padding: 0 16px;
         display: flex;
         align-items: center;
@@ -51,11 +55,11 @@
         font-weight: 500;
         border-radius: 4px;
         cursor: pointer;
-        transition: .3s;
+        transition: width .42s var(--menu-ease), height .42s var(--menu-ease),
+            background-color .2s ease, border-radius .3s ease;
         justify-content: center;
-        width: 100%;
+        width: 103px;
         top: 0;
-        transition-delay: .5s;
 
         &:hover {
             background-color: #A4DBE0;
@@ -64,21 +68,24 @@
 
     .menuDrop {
         display: flex;
-        width: 100%;
+        width: 149px;
         flex-direction: column;
         position: absolute;
-        top: 50px;
+        top: 44px;
+        left: 0;
         box-shadow: 0px 8px 12px 0px #00000014;
         background-color: #fff;
         padding: 16px;
         gap: 16px;
         border-radius: 0 0 4px 4px;
         border-top: 1px solid #DDDDDD;
-        max-height: 0px;
-        height: fit-content;
         opacity: 0;
-        transition: .5s;
-        transition-delay: 0s;
+        clip-path: inset(0 0 100% 0);
+        transform: translateY(-4px);
+        visibility: hidden;
+        pointer-events: none;
+        transition: clip-path .3s var(--menu-ease), transform .3s var(--menu-ease),
+            opacity .18s ease, visibility 0s .3s;
 
         a {
             font-size: 13px;
@@ -88,6 +95,9 @@
             justify-content: space-between;
             align-items: center;
             font-family: "Inter";
+            opacity: 0;
+            transform: translateY(-6px);
+            transition: opacity .16s ease, transform .24s var(--menu-ease);
 
             svg {
                 transition: .5s;
@@ -105,20 +115,34 @@
 }
 
 .menuDropVisible {
-    width: 149px;
-
     .menubutton {
+        width: 149px;
         background-color: #fff;
         border-radius: 4px 4px 0 0;
         height: 44px;
-        top: 6px;
-        transition-delay: 0s;
     }
 
     .menuDrop {
-        max-height: 200px;
         opacity: 1;
-        transition-delay: .5s;
+        clip-path: inset(0 0 -20px -20px);
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
+        transition: clip-path .42s var(--menu-ease) .06s,
+            transform .42s var(--menu-ease) .06s, opacity .2s ease .06s,
+            visibility 0s;
+
+        a {
+            opacity: 1;
+            transform: translateY(0);
+            transition-duration: .24s, .36s;
+
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    transition-delay: #{.1 + ($i - 1) * .035}s;
+                }
+            }
+        }
     }
 }
 
@@ -135,26 +159,6 @@
     img {
         width: 133px;
         height: auto;
-    }
-
-    .menubutton {
-        background-color: #DDDDDD;
-        border: 0.25px solid #FFFFFF;
-        box-shadow: 0px 8px 12px 0px #00000014;
-        color: #1C1C1C;
-        height: 40px;
-        padding: 0 16px;
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        font-weight: 500;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: .3s;
-
-        &:hover {
-            background-color: #A4DBE0;
-        }
     }
 
     >.buttonContacto {
@@ -296,6 +300,13 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+    .menuContainer .menubutton,
+    .menuContainer .menuDrop,
+    .menuContainer .menuDrop a {
+        transition-duration: .01ms;
+        transition-delay: 0s;
+    }
+
     #menuDropMobile,
     #menuDropMobile #menuDropMobileContent {
         animation-duration: .01ms;

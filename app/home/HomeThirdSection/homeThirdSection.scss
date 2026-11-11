@@ -8,7 +8,7 @@
     >section {
         width: 100%;
         padding: 0 56px;
-        height: 416px;
+        align-items: stretch;
         display: flex;
         justify-content: space-between;
         gap: 16px;
@@ -20,6 +20,8 @@
                 gap: 16px;
                 width: 100%;
                 max-width: 417px;
+                flex: 417 1 0;
+                min-width: 0;
 
                 h2 {
                     font-size: 32px;
@@ -149,7 +151,56 @@
 
 .homeThirdSectionCarouselDesktop {
     position: relative;
-    width: 735px;
+    flex: 735 1 0;
+    min-width: 0;
+    aspect-ratio: 735 / 416;
+    container-type: inline-size;
+
+    .homeThirdSectionCard {
+        width: 38.095238cqw;
+        height: 38.095238cqw;
+        top: 1.632653cqw;
+        right: 1.632653cqw;
+
+        >div {
+            padding: clamp(12px, 3.265306cqw, 24px);
+            gap: 8px;
+
+            p {
+                min-width: 0;
+                font-size: clamp(11px, 1.904762cqw, 14px);
+
+                span {
+                    font-size: clamp(13px, 2.721088cqw, 20px);
+                }
+            }
+
+            >a {
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    .homeThirdSectionCardSelected {
+        width: 56.734694cqw;
+        height: 56.598639cqw;
+        right: 43.265306cqw;
+        top: 0;
+    }
+
+    .homeThirdSectionCardNext {
+        width: 41.088435cqw;
+        height: 43.537415cqw;
+        right: 0;
+        top: 0;
+    }
+
+    @container (max-width: 600px) {
+        .homeThirdSectionCard >div {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
 }
 
 .homeThirdSectionCarouselMobile {
@@ -217,29 +268,6 @@
         }
     }
 
-    .homeThirdSectionCard {
-        width: 220px;
-        height: 220px;
-    }
-
-    .homeThirdSectionCardSelected {
-        width: 330px;
-        height: 330px;
-        right: calc(100% - 330px);
-    }
-
-    .homeThirdSectionCardNext {
-        width: 240px;
-        height: 240px;
-    }
-
-    .homeThirdSectionCard {
-        >div {
-            gap: 8px;
-            min-width: 330px;
-        }
-    }
-
 }
 
 @media (max-width: 768px) {
@@ -254,6 +282,7 @@
             >div {
                 &:nth-child(1) {
                     padding: 0 32px;
+                    flex: none;
                 }
             }
         }
@@ -305,6 +334,7 @@
                     --card-opacity: 1;
                     flex-direction: column;
                     align-items: start;
+                    gap: 10px;
                 }
             }
         }

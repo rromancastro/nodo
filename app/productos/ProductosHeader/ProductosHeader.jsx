@@ -1,12 +1,12 @@
 import { SplitH1 } from '@/app/components';
-import '@/app/nosotros/NosotrosHeader/nosotrosHeader.scss';
+import './productosHeader.scss';
 import { ParallaxImage } from '@/app/components/ParallaxImage/ParallaxImage';
 
 export const ProductosHeader = () => {
-    return <section id='nosotrosHeader'>
-        <SplitH1 id='nosotrosHeaderTitle'>
+    return <section id='productosHeader'>
+        <SplitH1 id='productosHeaderTitle'>
             Calidad certificada.
         </SplitH1>
-        <ParallaxImage className="headerImage" src={'/productos/header.png'} alt='Imagen de tecnologia' />
+        <ParallaxImage className="headerImage" src={'/productos/header.avif'} alt='Imagen de tecnologia' />
     </section>
 }

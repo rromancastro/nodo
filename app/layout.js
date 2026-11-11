@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   ...createPageMetadata('/'),
   metadataBase: new URL(siteUrl),
+  verification: {
+    google: 'HIXTYlW79yJ4gWWafhMAft-tfswMToW_CtsOrOwu_X8',
+  },
   robots: {
     index: true,
     follow: true,

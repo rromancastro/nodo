@@ -26,10 +26,10 @@ export const ProyectoPage = ({ proyecto }) => {
 
                     <div className='proyectoPageHeroCard'>
                         <p id='proyectoPageHeroCardP3'>
-                            Sector
+                            Escala
                         </p>
                         <p id='proyectoPageHeroCardP4'>
-                            {proyecto.sector}
+                            {proyecto.escala}
                         </p>
                     </div>
 
@@ -66,17 +66,12 @@ export const ProyectoPage = ({ proyecto }) => {
                     </div>
 
                     <div className='proyectoPageSecondSectionCard'>
-                        <p id='proyectoPageSecondSectionCardP3'>Descripción</p>
+                        <p id='proyectoPageSecondSectionCardP3'>Descripción General</p>
                         <p id='proyectoPageSecondSectionCardP4'>{proyecto.descripcion}</p>
                     </div>
 
                     <div className='proyectoPageSecondSectionCard'>
-                        <p id='proyectoPageSecondSectionCardP5' >Escala institución (m²)</p>
-                        <p id='proyectoPageSecondSectionCardP6' >{proyecto.escala}</p>
-                    </div>
-
-                    <div className='proyectoPageSecondSectionCard'>
-                        <p id='proyectoPageSecondSectionCardP7' >Beneficios / criterio técnico</p>
+                        <p id='proyectoPageSecondSectionCardP7' >Resultados</p>
                         <p id='proyectoPageSecondSectionCardP8' >{proyecto.beneficios}</p>
                     </div>
                 </div>
@@ -89,7 +84,7 @@ export const ProyectoPage = ({ proyecto }) => {
                         <p> {proyecto.anio} · {proyecto.ubicacion}</p>
                     </div>
 
-                    <p id='proyectoPageThirdSectionP1' >{proyecto.descripcion}</p>
+                    {proyecto.textoDestacado && <p id='proyectoPageThirdSectionP1'>{proyecto.textoDestacado}</p>}
                 </div>
 
                 <Image unoptimized src={proyecto.thirdSectionImage} alt={proyecto.institucion} width={500} height={500} />

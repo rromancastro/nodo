@@ -26,6 +26,11 @@ h1, h2, h3 {
   font-weight: 600;
 }
 
+// Let accents and descenders extend beyond the line box inside SplitText masks.
+.split-heading-line-mask {
+  overflow-clip-margin: 0.25em;
+}
+
 h2 {
   font-size: 32px !important;
 }
@@ -48,11 +53,6 @@ main {
   flex-direction: column;
   gap: 64px;
   margin: 64px 0;
-}
-
-.disabled {
-    pointer-events: none;
-    opacity: 0.5 !important;
 }
 
 * {

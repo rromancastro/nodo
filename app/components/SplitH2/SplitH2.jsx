@@ -23,14 +23,14 @@ export const SplitH2 = ({ children, id, opacity=0, threshold=1, lineStagger=0.1 
 
                 splitRef.current = SplitText.create(`#${id}`, {
                     type: "words,lines",
-                    linesClass: "line",
+                    linesClass: "line split-heading-line",
                     autoSplit: true,
                     mask: "lines",
                 });
 
                 gsap.from(splitRef.current.lines, {
                     duration: 3,
-                    yPercent: 110,
+                    yPercent: 150,
                     opacity: opacity,
                     stagger: lineStagger,
                     ease: "expo.out",

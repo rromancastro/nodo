@@ -1,0 +1,564 @@
+[
+  {
+    "name": "Gases Medicinales",
+    "slug": "gases-medicinales",
+    "imgSrc": "/home/GasesMedicinales.avif",
+    "products": [
+      {
+        "name": "Regulador de Aire Comprimido Medicinal",
+        "slug": "regulador-de-aire-comprimido-medicinal",
+        "subcategory": "Reguladores",
+        "sourceUrl": "https://drive.google.com/file/d/1k5o3PrtGmXrqV5FIbOHtaFXPWSk5BI-v/view?usp=sharing",
+        "desc": "Regulador de presión de línea para aire comprimido medicinal. Estabiliza la presión de la red de aire para uso clínico.",
+        "use": "Se utiliza en salidas de aire comprimido medicinal para alimentar respiradores, incubadoras y otros equipos que requieren aire a presión constante.",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/regulador-de-aire-comprimido-medicinal.avif"
+      },
+      {
+        "name": "Regulador de Nitrógeno",
+        "slug": "regulador-de-nitrogeno",
+        "subcategory": "Reguladores",
+        "sourceUrl": "https://drive.google.com/file/d/1CR5jRkU3-GtZXML91oCiXpPHTU9BRqyU/view?usp=sharing",
+        "desc": "Regulador de presión de línea para nitrógeno. Ajusta la presión de suministro para uso técnico/quirúrgico.",
+        "use": "Se emplea en instalaciones que cuentan con red de nitrógeno, típicamente para alimentar instrumental neumático de quirófano (motores, sierras).",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/regulador-de-nitrogeno.avif"
+      },
+      {
+        "name": "Regulador de Oxigeno",
+        "slug": "regulador-de-oxigeno",
+        "subcategory": "Reguladores",
+        "sourceUrl": "https://drive.google.com/file/d/1CedKX_gVCcLtVhXuqZjA1IdkToQP71jw/view?usp=sharing",
+        "desc": "Regulador de presión de línea para oxigeno. Ajusta la presión de suministro para uso técnico/quirúrgico.",
+        "use": "",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/regulador-de-oxigeno.avif"
+      },
+      {
+        "name": "Regulador de Bajo Vacío",
+        "slug": "regulador-de-bajo-vacio",
+        "subcategory": "Reguladores",
+        "sourceUrl": "https://drive.google.com/file/d/1mw79C0drLe0rn92G3J5wfJqNyXc5U0qx/view?usp=sharing",
+        "desc": "Regulador que permite ajustar y limitar el nivel de vacío tomado de la red central de vacío/aspiración a un rango bajo y controlado.",
+        "use": "Se usa en aspiración de secreciones en pacientes donde se requiere un vacío suave y regulable (por ejemplo neonatología o sondas nasogástricas), evitando dañar tejidos.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/regulador-de-bajo-vacio.avif"
+      },
+      {
+        "name": "Regulador de Alta Presión - Aire comprimido",
+        "slug": "regulador-de-alta-presion-aire-comprimido",
+        "subcategory": "Reguladores",
+        "sourceUrl": "https://drive.google.com/file/d/1lwNEo2P0A2F5mL8GTsXpZE-swZvh0Uc3/view?usp=drive_link",
+        "desc": "Regulador de alta presión para aire comprimido, diseñado para trabajar con la presión de cilindro/red de este gas.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/regulador-de-alta-presion-aire-comprimido.avif"
+      },
+      {
+        "name": "Regulador de Alta Presión -Oxigeno",
+        "slug": "regulador-de-alta-presion-oxigeno",
+        "subcategory": "Reguladores",
+        "sourceUrl": "https://drive.google.com/file/d/1xc54tO6DqvzznDFifyjvNJb0dP--zlay/view?usp=drive_link",
+        "desc": "Regulador de alta presión para oxigeno, diseñado para trabajar con la presión de cilindro/red de este gas.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/regulador-de-alta-presion-oxigeno.avif"
+      },
+      {
+        "name": "Llave Micrométrica de Vacío con vacuométro",
+        "slug": "llave-micrometrica-de-vacio-con-vacuometro",
+        "subcategory": "Reguladores",
+        "sourceUrl": "https://drive.google.com/file/d/1p-dHWpqM1Q4GLRf9C5gDWcl59oQkR3sk/view?usp=drive_link",
+        "desc": "Llave de ajuste fino (micrométrico) para regular con precisión el caudal de vacío en la salida de la red.",
+        "use": "Permite al personal de salud graduar con precisión la intensidad de la aspiración según la necesidad clínica del paciente.",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/llave-micrometrica-de-vacio-con-vacuometro.avif"
+      },
+      {
+        "name": "Llave Micrométrica de Vacío con vacuométro + frasco recolector salida superior",
+        "slug": "llave-micrometrica-de-vacio-con-vacuometro-frasco-recolector-salida-superior",
+        "subcategory": "Reguladores",
+        "sourceUrl": "https://drive.google.com/file/d/1lBCYcPHZF6kLGUSUJ1GFxnoN7lEks7H-/view?usp=drive_link",
+        "desc": "Llave micrométrica reguladora de vacío integrada con frasco recolector de salida superior, para uso conjunto de regulación y recolección de secreciones. 300 cm3 o 500 cm3.",
+        "use": "Se instala al sistema de aspiración central para regular el vacío. Aspira los líquidos y secreciones del paciente.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/llave-micrometrica-de-vacio-con-vacuometro-frasco-recolector-salida-superior.avif"
+      },
+      {
+        "name": "Medidor de Flujo - Oxígeno (Flowmeter) 0-1 LPM",
+        "slug": "medidor-de-flujo-oxigeno-flowmeter-0-1-lpm",
+        "subcategory": "Caudalímetro (flowmetters)",
+        "sourceUrl": "https://drive.google.com/file/d/14c84AWw5QXup2OOCYh6_kNP-GXRq7vfo/view?usp=sharing",
+        "desc": "Caudalímetro de bajo rango, de 0 a 1 litro por minuto, para dosificar oxígeno con alta precisión en caudales muy bajos.",
+        "use": "Indicado para administración de oxígeno en neonatología y pediatría, donde se requieren caudales mínimos y muy precisos.",
+        "notes": "Disponible en distintas normas de acople según la instalación del hospital.",
+        "imgSrc": "/productos/catalogo/gases-medicinales/medidor-de-flujo-oxigeno-flowmeter-0-1-lpm.avif"
+      },
+      {
+        "name": "Medidor de Flujo - Oxígeno (Flowmeter) 0-3 LPM",
+        "slug": "medidor-de-flujo-oxigeno-flowmeter-0-3-lpm",
+        "subcategory": "Caudalímetro (flowmetters)",
+        "sourceUrl": "https://drive.google.com/file/d/17YqA0tFtEqdmXm0t2VZIjw0skolw6t3h/view?usp=drive_link",
+        "desc": "Caudalímetro de oxígeno con rango de 0 a 3 litros por minuto.",
+        "use": "Utilizado para oxigenoterapia en pacientes que requieren bajos caudales de oxígeno, como adultos en reposo o pacientes pediátricos.",
+        "notes": "Disponible en distintas normas de acople según la instalación del hospital.",
+        "imgSrc": "/productos/catalogo/gases-medicinales/medidor-de-flujo-oxigeno-flowmeter-0-3-lpm.avif"
+      },
+      {
+        "name": "Medidor de Flujo - oxígeno (Flowmeter) 0-7 LPM",
+        "slug": "medidor-de-flujo-oxigeno-flowmeter-0-7-lpm",
+        "subcategory": "Caudalímetro (flowmetters)",
+        "sourceUrl": "https://drive.google.com/file/d/1tp4_K4xlzeYgcCbmlpgRdMONMxQhnqIE/view?usp=drive_link",
+        "desc": "Caudalímetro de oxígeno con rango de 0 a 7 litros por minuto.",
+        "use": "Utilizado en oxigenoterapia general de adultos, para caudales medios administrados por máscara o cánula nasal.",
+        "notes": "Disponible en distintas normas de acople según la instalación del hospital.",
+        "imgSrc": "/productos/catalogo/gases-medicinales/medidor-de-flujo-oxigeno-flowmeter-0-7-lpm.avif"
+      },
+      {
+        "name": "Medidor de Flujo - Oxígeno (Flowmeter) 0-15 LPM",
+        "slug": "medidor-de-flujo-oxigeno-flowmeter-0-15-lpm",
+        "subcategory": "Caudalímetro (flowmetters)",
+        "sourceUrl": "https://drive.google.com/file/d/1KEDXr74UOYqmUKI2ZvzjeMJKq7BKqcpm/view?usp=drive_link",
+        "desc": "Caudalímetro de alto rango de 0 a 15 litros por minuto. Disponible para líneas de aire y de oxígeno.",
+        "use": "Se emplea en situaciones que requieren mayor caudal de gas, como máscaras con reservorio, nebulizaciones o equipos de terapia respiratoria de alto flujo.",
+        "notes": "Disponible en distintas normas de acople según la instalación del hospital.",
+        "imgSrc": "/productos/catalogo/gases-medicinales/medidor-de-flujo-oxigeno-flowmeter-0-15-lpm.avif"
+      },
+      {
+        "name": "Medidor de Flujo - Aire (Flowmeter) 0-15 LPM",
+        "slug": "medidor-de-flujo-aire-flowmeter-0-15-lpm",
+        "subcategory": "Caudalímetro (flowmetters)",
+        "sourceUrl": "https://drive.google.com/file/d/1_6nDmr43QkC52TWwrvgoaor9O_vNQ5OQ/view?usp=drive_link",
+        "desc": "Caudalímetro de alto rango de 0 a 15 litros por minuto. Disponible para líneas de aire y de oxígeno.",
+        "use": "Se emplea en situaciones que requieren mayor caudal de gas, como máscaras con reservorio, nebulizaciones o equipos de terapia respiratoria de alto flujo.",
+        "notes": "Disponible en distintas normas de acople según la instalación del hospital.",
+        "imgSrc": "/productos/catalogo/gases-medicinales/medidor-de-flujo-aire-flowmeter-0-15-lpm.avif"
+      },
+      {
+        "name": "BM - Aire",
+        "slug": "bm-aire",
+        "subcategory": "Plug",
+        "sourceUrl": "https://drive.google.com/drive/folders/1pR38XRFJ-AWGrgkUoypGUj_D4k01QL3s?usp=sharing",
+        "desc": "Toma/salida para conexión de apartología a la red central de gases medicinales.",
+        "use": "Punto de conexión en habitaciones, quirófanos y áreas críticas para alimentar reguladores, humidificadores o equipos de terapia respiratoria.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/bm-aire.avif"
+      },
+      {
+        "name": "BM - Oxígeno",
+        "slug": "bm-oxigeno",
+        "subcategory": "Plug",
+        "sourceUrl": "https://drive.google.com/drive/folders/1SMQu_0nsA9wKfjh9bcYz83N-Hha4dvpU?usp=sharing",
+        "desc": "Toma/salida para conexión de apartología a la red central de gases medicinales.",
+        "use": "Punto de conexión en habitaciones, quirófanos y áreas críticas para alimentar reguladores, humidificadores o equipos de terapia respiratoria.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/bm-oxigeno.avif"
+      },
+      {
+        "name": "BM - Vacío",
+        "slug": "bm-vacio",
+        "subcategory": "Plug",
+        "sourceUrl": "https://drive.google.com/drive/folders/1Ro6igQBuSf3Ly4cyFIlPOuXTCxrF8Gdb?usp=sharing",
+        "desc": "Toma/salida para conexión de apartología a la red central de gases medicinales.",
+        "use": "Punto de conexión en habitaciones, quirófanos y áreas críticas para alimentar reguladores, humidificadores o equipos de terapia respiratoria.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/bm-vacio.avif"
+      },
+      {
+        "name": "DISS - Aire",
+        "slug": "diss-aire",
+        "subcategory": "Plug",
+        "sourceUrl": "https://drive.google.com/drive/folders/1wMRWbLIJV0ns-bDVNTqQ_Adj9bCFt-wP?usp=sharing",
+        "desc": "Toma/salida para conexión de apartología a la red central de gases medicinales.",
+        "use": "Punto de conexión en habitaciones, quirófanos y áreas críticas para alimentar reguladores, humidificadores o equipos de terapia respiratoria.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/diss-aire.avif"
+      },
+      {
+        "name": "DISS - Nitrogeno",
+        "slug": "diss-nitrogeno",
+        "subcategory": "Plug",
+        "sourceUrl": "https://drive.google.com/drive/folders/1YQVp90HMb7hwsesYqhjkG1sAAj4YOMTG?usp=sharing",
+        "desc": "Toma/salida para conexión de apartología a la red central de gases medicinales.",
+        "use": "Punto de conexión en habitaciones, quirófanos y áreas críticas para alimentar reguladores, humidificadores o equipos de terapia respiratoria.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/diss-nitrogeno.avif"
+      },
+      {
+        "name": "DISS - Oxigeno",
+        "slug": "diss-oxigeno",
+        "subcategory": "Plug",
+        "sourceUrl": "https://drive.google.com/drive/folders/1Wa-OWG7sDVAZXjXFA1N9qqUsTOffu9An?usp=sharing",
+        "desc": "Toma/salida para conexión de apartología a la red central de gases medicinales.",
+        "use": "Punto de conexión en habitaciones, quirófanos y áreas críticas para alimentar reguladores, humidificadores o equipos de terapia respiratoria.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/diss-oxigeno.avif"
+      },
+      {
+        "name": "DISS - Vacío",
+        "slug": "diss-vacio",
+        "subcategory": "Plug",
+        "sourceUrl": "https://drive.google.com/drive/folders/1A3UDNIA6jFp4ews2YDv8t4dnascnTV5I?usp=sharing",
+        "desc": "Toma/salida para conexión de apartología a la red central de gases medicinales.",
+        "use": "Punto de conexión en habitaciones, quirófanos y áreas críticas para alimentar reguladores, humidificadores o equipos de terapia respiratoria.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/diss-vacio.avif"
+      },
+      {
+        "name": "ON - AIRE",
+        "slug": "on-aire",
+        "subcategory": "Plug",
+        "sourceUrl": "https://drive.google.com/drive/folders/11EyQCvbQ8gfN8oABpamsxUGFM1HpFWDI?usp=sharing",
+        "desc": "Toma/salida rápida de para conexión de apartología a la red central de gases medicinales.",
+        "use": "Punto de conexión de oxígeno en habitaciones, quirófanos y áreas críticas para alimentar reguladores, humidificadores o equipos de terapia respiratoria.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/on-aire.avif"
+      },
+      {
+        "name": "ON - Oxígeno",
+        "slug": "on-oxigeno",
+        "subcategory": "Plug",
+        "sourceUrl": "https://drive.google.com/drive/folders/1BXkyMghMzgeO0pmMVtJjen-wxthucYo2?usp=sharing",
+        "desc": "Toma/salida rápida de para conexión de apartología a la red central de gases medicinales.",
+        "use": "Punto de conexión en habitaciones, quirófanos y áreas críticas para alimentar reguladores, humidificadores o equipos de terapia respiratoria.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/on-oxigeno.avif"
+      },
+      {
+        "name": "ON - Vacío",
+        "slug": "on-vacio",
+        "subcategory": "Plug",
+        "sourceUrl": "https://drive.google.com/drive/folders/1lfu_nHH7v02jaXTzkZZ_OHaXcrg2k-m3?usp=sharing",
+        "desc": "Toma/salida rápida de para conexión de apartología a la red central de gases medicinales.",
+        "use": "Punto de conexión en habitaciones, quirófanos y áreas críticas para alimentar reguladores, humidificadores o equipos de terapia respiratoria.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/on-vacio.avif"
+      },
+      {
+        "name": "AGA - Vacío",
+        "slug": "aga-vacio",
+        "subcategory": "Plug",
+        "sourceUrl": "https://drive.google.com/file/d/1xZ6GaC3lPI06D7szXqO6DxNYK61Gahr7/view?usp=sharing",
+        "desc": "Toma/salida rápida de para conexión de apartología a la red central de gases medicinales.",
+        "use": "Punto de conexión en habitaciones, quirófanos y áreas críticas para alimentar reguladores, humidificadores o equipos de terapia respiratoria.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/aga-vacio.avif"
+      },
+      {
+        "name": "Alarma de Presión de Gases Medicinales 3G",
+        "slug": "alarma-de-presion-de-gases-medicinales-3g",
+        "subcategory": "equipamiento",
+        "sourceUrl": "https://drive.google.com/file/d/1ih2Yp-kmwPrZKHlN5joZMLQ6AobR3DZz/view?usp=sharing",
+        "desc": "Alarma que monitorea en forma continua la presión de las redes de gases medicinales (oxígeno, aire, vacío, etc.) y señaliza en forma visual y sonora cualquier caída o exceso de presión.",
+        "use": "Se instala en pasillos, centrales de enfermería o salas técnicas para alertar de inmediato al personal ante una falla en el suministro de gases, permitiendo actuar antes de que afecte a los pacientes.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/alarma-de-presion-de-gases-medicinales-3g.avif"
+      },
+      {
+        "name": "Frasco de Salida Superior 300cc",
+        "slug": "frasco-de-salida-superior-300cc",
+        "subcategory": "Frascos",
+        "sourceUrl": "https://drive.google.com/file/d/1RuzYKwS-SCoBXmORGBRJJlhp3R7GetuI/view?usp=drive_link",
+        "desc": "Frasco recolector de secreciones con salida de conexión en la parte superior, capacidad 300cc, para sistemas de aspiración central.",
+        "use": "Se conecta a la toma de vacío para recolectar líquidos y secreciones aspiradas al paciente.",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/frasco-de-salida-superior-300cc.avif"
+      },
+      {
+        "name": "Frasco de Salida Superior 500cc",
+        "slug": "frasco-de-salida-superior-500cc",
+        "subcategory": "Frascos",
+        "sourceUrl": "https://drive.google.com/file/d/1l1WqyJNl2oJfnG441EBGxvtjMxyUmLxI/view?usp=sharing",
+        "desc": "Frasco recolector de secreciones con salida de conexión en la parte superior, capacidad 500cc, para sistemas de aspiración central.",
+        "use": "Se conecta a la toma de vacío para recolectar mayor volumen de líquidos y secreciones aspiradas al paciente.",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/frasco-de-salida-superior-500cc.avif"
+      },
+      {
+        "name": "Frasco Aspirador 300cc",
+        "slug": "frasco-aspirador-300cc",
+        "subcategory": "Frascos",
+        "sourceUrl": "https://drive.google.com/file/d/1rIVjHLWsTpwdL0mgUohCkNYxlj0ttQ01/view?usp=sharing",
+        "desc": "Frasco recolector estándar para sistemas de aspiración/vacío central, capacidad 300cc.",
+        "use": "Utilizado como reservorio intermedio en la línea de aspiración de secreciones del paciente.",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/frasco-aspirador-300cc.avif"
+      },
+      {
+        "name": "Frasco Aspirador 500cc",
+        "slug": "frasco-aspirador-500cc",
+        "subcategory": "Frascos",
+        "sourceUrl": "https://drive.google.com/file/d/1FCqLeSMgLKl3Ha0VKO21kTxNuETR0cNJ/view?usp=sharing",
+        "desc": "Frasco recolector estándar para sistemas de aspiración/vacío central, capacidad 500cc.",
+        "use": "Utilizado como reservorio intermedio en la línea de aspiración de secreciones del paciente, para mayores volúmenes.",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/frasco-aspirador-500cc.avif"
+      },
+      {
+        "name": "Llave Micrométrica de Vacío con vacuométro + frasco recolector salida superior",
+        "slug": "llave-micrometrica-de-vacio-con-vacuometro-frasco-recolector-salida-superior-frascos",
+        "subcategory": "Frascos",
+        "sourceUrl": "https://drive.google.com/file/d/1lBCYcPHZF6kLGUSUJ1GFxnoN7lEks7H-/view?usp=drive_link",
+        "desc": "Llave micrométrica reguladora de vacío integrada con frasco recolector de salida superior, para uso conjunto de regulación y recolección de secreciones. 300 cm3 o 500 cm3.",
+        "use": "Se instala al sistema de aspiración central para regular el vacío. Aspira los líquidos y secreciones del paciente.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/llave-micrometrica-de-vacio-con-vacuometro-frasco-recolector-salida-superior-frascos.avif"
+      },
+      {
+        "name": "Humectador de Oxígeno con Frasco 300cc",
+        "slug": "humectador-de-oxigeno-con-frasco-300cc",
+        "subcategory": "Frascos",
+        "sourceUrl": "https://drive.google.com/file/d/1RJh_c0CKhopdGdsByqR2cjYd8N5ucued/view?usp=drive_link",
+        "desc": "Frasco humectador con agua estéril que se conecta entre la toma de oxígeno y el paciente para humidificar el gas antes de su administración.",
+        "use": "Se utiliza en oxigenoterapia para evitar la sequedad de las vías respiratorias del paciente durante la administración prolongada de oxígeno.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/humectador-de-oxigeno-con-frasco-300cc.avif"
+      },
+      {
+        "name": "Frasco Intermediario 300cc",
+        "slug": "frasco-intermediario-300cc",
+        "subcategory": "Frascos",
+        "sourceUrl": "https://drive.google.com/file/d/1q49KHmtMuxd0uiiHLZQWOtgagHahAZEB/view?usp=sharing",
+        "desc": "Frasco de seguridad (\"trampa de agua\") que se instala entre el paciente y el equipo de aspiración, capacidad 300cc.",
+        "use": "Protege al equipo de vacío evitando que líquidos aspirados lleguen a la línea o a la central de vacío.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/frasco-intermediario-300cc.avif"
+      },
+      {
+        "name": "Frasco Intermediario 500cc",
+        "slug": "frasco-intermediario-500cc",
+        "subcategory": "Frascos",
+        "sourceUrl": "https://drive.google.com/file/d/1gXxSmcTanGwEOVfa0YrozLlO3XirPLNm/view?usp=sharing",
+        "desc": "Frasco de seguridad (\"trampa de agua\") que se instala entre el paciente y el equipo de aspiración, capacidad 500cc.",
+        "use": "Protege al equipo de vacío evitando que líquidos aspirados lleguen a la línea o a la central de vacío, para mayores volúmenes.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/frasco-intermediario-500cc.avif"
+      },
+      {
+        "name": "Panel Miniducto 1 Acople DISS",
+        "slug": "panel-miniducto-1-acople-diss",
+        "subcategory": "equipamiento",
+        "sourceUrl": "https://drive.google.com/file/d/1w-0pk0-G1VmCG_SwEn6OmruyMxG6y1WG/view?usp=drive_link",
+        "desc": "Panel compacto de gases medicinales con una (1) salida rápida tipo DISS.",
+        "use": "Se utiliza en espacios donde no es necesaria una instalación de barral completo, como consultorios o ambulancias, para brindar un único punto de gas medicinal.",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/panel-miniducto-1-acople-diss.avif"
+      },
+      {
+        "name": "Panel Miniducto 2 Acoples DISS",
+        "slug": "panel-miniducto-2-acoples-diss",
+        "subcategory": "equipamiento",
+        "sourceUrl": "https://drive.google.com/file/d/1NHzH8db0DpFj4QQKvfx-4elCbGqxcU7u/view?usp=drive_link",
+        "desc": "Panel compacto de gases medicinales con dos (2) salidas rápidas tipo DISS.",
+        "use": "Se utiliza en espacios reducidos que requieren dos puntos de gas medicinal (por ejemplo oxígeno y vacío) sin instalar un barral completo.",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/panel-miniducto-2-acoples-diss.avif"
+      },
+      {
+        "name": "Panel Miniducto 3 Acoples DISS",
+        "slug": "panel-miniducto-3-acoples-diss",
+        "subcategory": "equipamiento",
+        "sourceUrl": "https://drive.google.com/file/d/1xlcLRjlljH-6pTqxHMkTRSr7qUvTnltg/view?usp=drive_link",
+        "desc": "Panel compacto de gases medicinales con tres (3) salidas rápidas tipo DISS.",
+        "use": "Se utiliza en salas de recuperación, consultorios o traslados que requieren hasta tres puntos de gas medicinal en un solo panel.",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/panel-miniducto-3-acoples-diss.avif"
+      },
+      {
+        "name": "Bandeja Soporte para Monitor (Barral, Chapa Plegada Blanca)",
+        "slug": "bandeja-soporte-para-monitor-barral-chapa-plegada-blanca",
+        "subcategory": "equipamiento",
+        "sourceUrl": "https://drive.google.com/file/d/1TUvijrHj2dRWqcJFnENDAtv3nQaFgSAH/view?usp=drive_link",
+        "desc": "Bandeja de chapa plegada, terminación blanca, diseñada para sujetarse al barral/riel de cabecera y sostener un monitor de paciente.",
+        "use": "Se instala en la cabecera de la cama para apoyar y fijar el monitor de signos vitales, liberando espacio en la mesa de trabajo.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/bandeja-soporte-para-monitor-barral-chapa-plegada-blanca.avif"
+      },
+      {
+        "name": "Lámpara Articulada para Barral",
+        "slug": "lampara-articulada-para-barral",
+        "subcategory": "equipamiento",
+        "sourceUrl": "https://drive.google.com/file/d/1AWu15AX8YCYJeuKZ38z0Wnn0WYYOB3rQ/view?usp=drive_link",
+        "desc": "Lámpara de brazo articulado que se fija al barral/riel de cabecera, orientable para iluminación puntual.",
+        "use": "Brinda iluminación dirigida para examen del paciente o procedimientos junto a la cama, sin necesidad de encender la luz general de la habitación.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/lampara-articulada-para-barral.avif"
+      },
+      {
+        "name": "Manguera Plug DISS - Acople Agalinde 4 m",
+        "slug": "manguera-plug-diss-acople-agalinde-4-m",
+        "subcategory": "equipamiento",
+        "sourceUrl": "https://drive.google.com/file/d/1Cvx92FBRslxmq1rL09H942dB5j-cL7bC/view?usp=drive_link",
+        "desc": "Manguera de conexión de 4 metros con acople tipo Plug DISS en un extremo y acople Agalinde en el otro, para vincular una toma de gas con un equipo.",
+        "use": "Permite conectar un equipo médico (por ejemplo un tanque portátil o un dispositivo de terapia) a una toma de gas de pared o barral a distancia.",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/manguera-plug-diss-acople-agalinde-4-m.avif"
+      },
+      {
+        "name": "Pistola Secadora Plug DISS Aire",
+        "slug": "pistola-secadora-plug-diss-aire",
+        "subcategory": "equipamiento",
+        "sourceUrl": "https://drive.google.com/file/d/11OwXjpIRLcusS4XliXN888HriCj7yXQC/view?usp=drive_link",
+        "desc": "Pistola de aire comprimido con conexión rápida tipo Plug DISS, para uso con la red de aire medicinal/técnico.",
+        "use": "Se utiliza para secado o soplado con aire comprimido en tareas de mantenimiento o limpieza dentro del área asistencial.",
+        "notes": "Disponible en distintas normas de acople rápido según la instalación del hospital (DISS, AGA, BM, ON)",
+        "imgSrc": "/productos/catalogo/gases-medicinales/pistola-secadora-plug-diss-aire.avif"
+      },
+      {
+        "name": "Porta Suero para Barral",
+        "slug": "porta-suero-para-barral",
+        "subcategory": "equipamiento",
+        "sourceUrl": "https://drive.google.com/file/d/1OamNhmx8tOwAqIPgX2xhZWjzspyz7rzl/view?usp=drive_link",
+        "desc": "Soporte para sueros/frascos de goteo, diseñado para fijarse al barral/riel de cabecera de la cama.",
+        "use": "Sostiene bolsas o frascos de suero cerca del paciente sin necesidad de un pie de suero independiente.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/porta-suero-para-barral.avif"
+      },
+      {
+        "name": "Soporte para Bomba de Infusión y Porta Suero (Barral)",
+        "slug": "soporte-para-bomba-de-infusion-y-porta-suero-barral",
+        "subcategory": "equipamiento",
+        "sourceUrl": "https://drive.google.com/file/d/1BVZgpdmDVd0PbhX_fY8KeY9gvRGXJEf4/view?usp=drive_link",
+        "desc": "Accesorio combinado para barral que integra soporte de bomba de infusión y porta suero.",
+        "use": "Permite montar en la cabecera de la cama tanto la bomba de infusión como el suero que alimenta, optimizando el espacio junto al paciente.",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/gases-medicinales/soporte-para-bomba-de-infusion-y-porta-suero-barral.avif"
+      }
+    ]
+  },
+  {
+    "name": "Puertas Automáticas",
+    "slug": "puertas-automaticas",
+    "imgSrc": "/home/PuertasAutomaticas.avif",
+    "products": [
+      {
+        "name": "Semiherméticas",
+        "slug": "semihermeticas",
+        "subcategory": "",
+        "sourceUrl": "https://drive.google.com/file/d/1vVtGBCFqrCxeDH6kfnbNuUf-Dyhex87q/view?usp=drive_link",
+        "desc": "Facilitan el acceso y la circulación en espacios que no requieren un cierre\r\nhermético. Integran un sistema de apertura motorizado y control electrónico, con opciones de hojas de vidrio, perfilería de\r\naluminio y distintos acabados para acompañar el diseño de cada proyecto.\r\nSe adaptan a comercios, oficinas, hoteles y áreas de circulación hospitalaria, con configuraciones corredizas,\r\ntelescópicas, batientes o curvas. Su automatización mejora la accesibilidad y aporta comodidad de uso, con alternativas\r\nque permiten aprovechar al máximo el paso disponible.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/puertas-automaticas/semihermeticas.avif",
+        "imageFit": "cover"
+      },
+      {
+        "name": "Herméticas",
+        "slug": "hermeticas",
+        "subcategory": "",
+        "sourceUrl": "https://drive.google.com/file/d/1eAiZyJvAH9WXVhLbFLRHgCJ2uxnOdQw-/view?usp=sharing",
+        "desc": "Puertas herméticas MI-LAB diseñadas para espacios que requieren condiciones especiales de higiene y control\nambiental. Combinan perfilería de aluminio, un núcleo aislante de poliuretano, revestimientos de acero inoxidable o HPL y\njuntas perimetrales que proporcionan un cierre estanco.\nDisponibles en versiones corredizas y batientes, manuales o automáticas, son ideales para quirófanos, salas blancas,\nlaboratorios e industrias farmacéuticas, alimentarias y químicas. Su sellado contribuye a preservar las condiciones del\nambiente, mientras que sus superficies lisas facilitan la limpieza. Funcionamiento suave y silencioso.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/puertas-automaticas/hermeticas.avif",
+        "imageFit": "cover"
+      }
+    ]
+  },
+  {
+    "name": "Correo Neumático",
+    "slug": "correo-neumatico",
+    "imgSrc": "/home/CorreoNeumatico.avif",
+    "products": [
+      {
+        "name": "Sistema de correo",
+        "slug": "sistema-de-correo",
+        "subcategory": "",
+        "sourceUrl": "https://drive.google.com/file/d/1EKCeTlNSS7VlHxBOaiMxgk6B1VjhfxBF/view?usp=drive_link",
+        "desc": "Sistema automatizado que transporta documentos, muestras y pequeños materiales mediante\ncápsulas impulsadas por aire a través de una red de tuberías. Integra estaciones de envío y recepción, unidades de\nimpulsión y sistemas de control, con desviadores según la configuración del proyecto.\nEn NODO trabajamos con tecnología Sumetzberger, ofreciendo soluciones para centros de salud, laboratorios, industrias,\nsupermercados y oficinas, adaptadas a los recorridos y necesidades de cada operación.\nSu implementación reduce los traslados manuales, los tiempos de espera y los costos operativos, mientras permite\nmonitorear y registrar los envíos en tiempo real. Una solución escalable que optimiza los recursos y libera tiempo del\npersonal para otras tareas. Más agilidad, menos recorridos y mayor control.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/correo-neumatico/sistema-de-correo.avif"
+      }
+    ]
+  },
+  {
+    "name": "Policanales",
+    "slug": "policanales",
+    "imgSrc": "/home/Policanales.avif",
+    "products": [
+      {
+        "name": "Administrativos",
+        "slug": "administrativos",
+        "subcategory": "",
+        "sourceUrl": "https://drive.google.com/file/d/1ZKAmapqKLRBSEWTxyC_Z2EKrbFUKg9UV/view?usp=sharing",
+        "desc": "El policanal NODO es un sistema de canalización que organiza y oculta las instalaciones, integrando electricidad, datos, telefonía,\r\nsistemas de llamado y aire comprimido según las necesidades del proyecto. Su estructura de aluminio, con canales independientes y\r\ntapas desmontables, facilita el acceso a los servicios y permite prever futuras ampliaciones.\r\nEs una solución adaptable a oficinas, comercios, centros educativos, laboratorios, consultorios, salas de reuniones y espacios\r\nindustriales, con opciones de instalación en muro, columnas o sobre mobiliario.\r\nSu diseño mantiene el piso libre de instalaciones, simplifica la limpieza y facilita el mantenimiento. Además, permite reducir los\r\ntiempos de obra y reubicar o ampliar el sistema, acompañando los cambios de cada espacio.\r\nMás orden y flexibilidad, sin renunciar al diseño.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/policanales/administrativos.avif",
+        "imageFit": "cover"
+      },
+      {
+        "name": "Comerciales",
+        "slug": "comerciales",
+        "subcategory": "",
+        "sourceUrl": "https://drive.google.com/file/d/1yprV-VU6BiVTdHZ9UcpcwfhCZ7Al2uPb/view?usp=drive_link",
+        "desc": "El policanal NODO es un sistema de canalización que organiza y oculta las instalaciones, integrando electricidad, datos, telefonía,\r\nsistemas de llamado y aire comprimido según las necesidades del proyecto. Su estructura de aluminio, con canales independientes y\r\ntapas desmontables, facilita el acceso a los servicios y permite prever futuras ampliaciones.\r\nEs una solución adaptable a oficinas, comercios, centros educativos, laboratorios, consultorios, salas de reuniones y espacios\r\nindustriales, con opciones de instalación en muro, columnas o sobre mobiliario.\r\nSu diseño mantiene el piso libre de instalaciones, simplifica la limpieza y facilita el mantenimiento. Además, permite reducir los\r\ntiempos de obra y reubicar o ampliar el sistema, acompañando los cambios de cada espacio.\r\nMás orden y flexibilidad, sin renunciar al diseño.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/policanales/comerciales.avif",
+        "imageFit": "cover"
+      },
+      {
+        "name": "Industriales",
+        "slug": "industriales",
+        "subcategory": "",
+        "sourceUrl": "https://drive.google.com/file/d/1FJpYAQo_4-UO-5cPLANGnVtqRbMAx_8t/view?usp=sharing",
+        "desc": "El policanal NODO es un sistema de canalización que organiza y oculta las instalaciones, integrando electricidad, datos, telefonía,\r\nsistemas de llamado y aire comprimido según las necesidades del proyecto. Su estructura de aluminio, con canales independientes y\r\ntapas desmontables, facilita el acceso a los servicios y permite prever futuras ampliaciones.\r\nEs una solución adaptable a oficinas, comercios, centros educativos, laboratorios, consultorios, salas de reuniones y espacios\r\nindustriales, con opciones de instalación en muro, columnas o sobre mobiliario.\r\nSu diseño mantiene el piso libre de instalaciones, simplifica la limpieza y facilita el mantenimiento. Además, permite reducir los\r\ntiempos de obra y reubicar o ampliar el sistema, acompañando los cambios de cada espacio.\r\nMás orden y flexibilidad, sin renunciar al diseño.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/policanales/industriales.avif",
+        "imageFit": "cover"
+      },
+      {
+        "name": "Sanitarios",
+        "slug": "sanitarios",
+        "subcategory": "",
+        "sourceUrl": "https://drive.google.com/file/d/1StQ_VHx7FljU2DyfJGNYsPbCQ3r51bda/view?usp=sharing",
+        "desc": "El policanal NODO es un sistema de canalización que organiza y oculta las instalaciones, integrando electricidad, datos, telefonía,\r\nsistemas de llamado y aire comprimido según las necesidades del proyecto. Su estructura de aluminio, con canales independientes y\r\ntapas desmontables, facilita el acceso a los servicios y permite prever futuras ampliaciones.\r\nEs una solución adaptable a oficinas, comercios, centros educativos, laboratorios, consultorios, salas de reuniones y espacios\r\nindustriales, con opciones de instalación en muro, columnas o sobre mobiliario.\r\nSu diseño mantiene el piso libre de instalaciones, simplifica la limpieza y facilita el mantenimiento. Además, permite reducir los\r\ntiempos de obra y reubicar o ampliar el sistema, acompañando los cambios de cada espacio.\r\nMás orden y flexibilidad, sin renunciar al diseño.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/policanales/sanitarios.avif",
+        "imageFit": "cover"
+      }
+    ]
+  },
+  {
+    "name": "Robótica",
+    "slug": "robotica",
+    "imgSrc": "/home/Robotica.avif",
+    "products": [
+      {
+        "name": "Athena System - Sinteco",
+        "slug": "athena-system-sinteco",
+        "subcategory": "",
+        "sourceUrl": "https://drive.google.com/file/d/1Rq23ONaHZkVJbFwmVzo7nWzSMHf0Jcfg/view?usp=drive_link",
+        "desc": "El sistema, diseñado para farmacias hospitalarias y áreas de internación, ofrece configuraciones centralizadas o descentralizadas que\r\nse adaptan al espacio y a las necesidades operativas de cada institución. Athena de Sinteco automatiza el envasado, almacenamiento\r\ny dispensación de medicamentos en dosis unitarias, facilitando la preparación de la medicación prescrita para cada paciente. Integra\r\nequipos de envasado Calypso, sistemas de almacenamiento y dispensación Pegasus y un software de gestión que se conecta con los\r\nsistemas informáticos del hospital.\r\nSu implementación permite optimizar el stock, gestionar devoluciones y mantener la trazabilidad de los medicamentos, contribuyendo\r\na reducir errores en la preparación y dispensación, así como los costos operativos.\r\nKits para análisis clínicos:\r\nOrientado al circuito de análisis clínicos, organiza la preparación y entrega de los insumos necesarios para cada paciente. El sistema\r\nEgida de Sinteco automatiza la preparación de kits de tubos para análisis clínicos. Combina la selección automática y el etiquetado de\r\nlos tubos según los estudios a realizar, agrupándolos en un envase identificado con los datos del paciente y del centro de análisis.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/robotica/athena-system-sinteco.avif",
+        "imageFit": "cover"
+      },
+      {
+        "name": "Go Cart - Sumetzberger",
+        "slug": "go-cart-sumetzberger",
+        "subcategory": "",
+        "sourceUrl": "https://drive.google.com/file/d/18ZKXdQ458dTw5DRuP6u26kcsYAMAxFDA/view?usp=drive_link",
+        "desc": "GoCart es una plataforma móvil autónoma dedicado a la logística interna hospitalaria y/o industrial capaz de transportar\r\nmedicamentos, insumos, material estéril y otras cargas de forma segura y eficiente. Su navegación inteligente con tecnología LiDAR\r\n3D y sensores avanzados permite desplazarse entre personas y obstáculos, operar con ascensores y puertas automáticas y coordinar\r\nflotas de robots. Gracias a sus módulos intercambiables, su capacidad de adaptación y una instalación rápida sin modificaciones\r\nestructurales, GoCart® optimiza los traslados internos, mejora la trazabilidad y libera al personal de tareas logísticas repetitivas.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/robotica/go-cart-sumetzberger.avif"
+      },
+      {
+        "name": "SortPro - ASP Lab Automation",
+        "slug": "sortpro-asp-lab-automation",
+        "subcategory": "",
+        "sourceUrl": "https://drive.google.com/file/d/1CF7Ah5PSIi9LeRAtjMdGRBTuRDAnXN-_/view?usp=sharing",
+        "desc": "SortPro es un sistema automatizado de preanalítica para laboratorios clínicos que capaz de recibir grandes cantidades de tubos,\r\nidentificarlos, verificar determinadas características de la muestra y dirigir cada tubo hacia el destino correspondiente. Clasifica\r\nmuestras de forma rápida, precisa y trazable. Mediante escaneo óptico 360°, reconoce códigos de barras, tipo y características del\r\ntubo, controla parámetros como el estado de centrifugación y detecta posibles errores o duplicados antes del análisis. Su integración\r\ncon el sistema LIS y su alta capacidad de procesamiento permiten reducir tareas manuales, minimizar errores, mejorar la trazabilidad y\r\noptimizar el flujo de trabajo del laboratorio.",
+        "use": "",
+        "notes": "",
+        "imgSrc": "/productos/catalogo/robotica/sortpro-asp-lab-automation.avif"
+      }
+    ]
+  }
+]

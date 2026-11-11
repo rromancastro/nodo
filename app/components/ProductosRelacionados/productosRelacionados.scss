@@ -1,0 +1,106 @@
+﻿.productosRelacionados {
+    --visible-products: 4;
+    --carousel-gutter: 56px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-inline: var(--carousel-gutter);
+    min-width: 0;
+
+    &Index { display: none; }
+
+    &Controls {
+        display: flex;
+        gap: 8px;
+
+        a, button {
+            display: grid;
+            place-items: center;
+            border: 0;
+            border-radius: 4px;
+            background: #1c1c1c0f;
+            color: #1c1c1c;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            .productosRelacionadosArrow {
+                display: block;
+                transform: rotate(180deg);
+                &-next { transform: none; }
+            }
+        }
+        button:disabled { opacity: .3; cursor: default; }
+    }
+
+    .productosCategoryComponentCarousel {
+        margin-left: calc(-1 * var(--carousel-gutter));
+        margin-right: 0;
+        width: calc(100% + var(--carousel-gutter));
+        padding: 0 0 16px var(--carousel-gutter);
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        align-items: flex-start;
+    }
+
+    &Track {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        flex: 0 0 100%;
+        align-items: flex-start;
+        transform: translateX(calc(-1 * var(--selected-index) * ((100% - (var(--visible-products) - 1) * 16px) / var(--visible-products) + 16px)));
+    }
+
+    &Item {
+        flex: 0 0 calc((100% - (var(--visible-products) - 1) * 16px) / var(--visible-products));
+        min-width: 0;
+        scroll-snap-align: start;
+        opacity: .5;
+        transition: opacity .3s ease;
+
+        &.isSelected { opacity: 1; }
+        &:hover, &:focus-within {
+            opacity: 1;
+            .productoCardImageContainer { border-color: #61B9C8; }
+        }
+        .productoCard { width: 100%; }
+        .productoCardImageContainer {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1;
+            border: 3px solid transparent;
+            transition: border-color .2s ease;
+        }
+        .productoCardImageContainer > svg { display: none; }
+        .productoCardImageContainer > img { padding: 16px; }
+    }
+}
+
+@media (max-width: 1024px) {
+    .productosRelacionados { --carousel-gutter: 32px; --visible-products: 3; }
+}
+@media (max-width: 768px) {
+    .productosRelacionados {
+        --carousel-gutter: 32px;
+        --visible-products: 2;
+        gap: 24px;
+
+        &Item .productoCardTextContainer p:first-child { font-size: 16px; line-height: 1.25; }
+
+        &Index {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 7px;
+            button {
+                width: 8px;
+                height: 8px;
+                border: 0;
+                border-radius: 4px;
+                background: #ddd;
+                transition: width .3s ease, background-color .3s ease;
+                &.isSelected { width: 21px; background: #00778b; }
+            }
+        }
+    }
+}

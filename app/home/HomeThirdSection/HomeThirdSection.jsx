@@ -7,12 +7,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const projects = [
-    { image: '/home/proyecto1.avif', name: 'Hospital Universitario Austral', period: '2022-2026', href: '/' },
-    { image: '/home/proyecto2.avif', name: 'Hospital Fernández', period: '2025', href: '/' },
-    { image: '/home/proyecto3.avif', name: 'Hospital Municipal Dr. Bernardo Houssay', period: '2025', href: '/' },
-    { image: '/home/proyecto4.avif', name: 'Sanatorio Itoiz', period: '2024', href: '/' },
-    { image: '/home/proyecto5.avif', name: 'Sanatorio Güemes', period: '2021', href: '/' },
-    { image: '/home/proyecto6.avif', name: 'Hospital Municipal Santa Marina ', period: '2019', href: '/' },
+    { image: '/home/proyecto1.avif', name: 'Hospital Universitario Austral', period: '2022-2026', href: '/proyectos/hospital-universitario-austral' },
+    { image: '/proyectos/sanjuan1.avif', name: 'Casa Hospital San Juan de Dios', period: '2023', href: '/proyectos/casa-hospital-san-juan-de-dios' },
+    { image: '/home/proyecto3.avif', name: 'Hospital Municipal Dr. Bernardo Houssay', period: '2025', href: '/proyectos/hospital-municipal-dr-bernardo-houssay' },
+    { image: '/home/proyecto4.avif', name: 'Sanatorio Itoiz', period: '2024', href: '/proyectos/sanatorio-itoiz' },
+    { image: '/home/proyecto5.avif', name: 'Sanatorio Güemes', period: '2021', href: '/proyectos/sanatorio-guemes' },
+    { image: '/home/proyecto6.avif', name: 'Hospital Municipal Santa Marina ', period: '2019', href: '/proyectos/hospital-santa-marina' },
 ];
 
 export const HomeThirdSection = () => {
@@ -68,7 +68,7 @@ export const HomeThirdSection = () => {
                 <SplitP id='homeThirdSectionP'>
                     Hemos trabajado para más de 20 instituciones, siendo parte de ellas, los principales referentes hospitalarios de Argentina.
                 </SplitP>
-                <Link href='/' className='buttonContacto disabled'>Ver más</Link>
+                <Link href='/proyectos' className='buttonContacto'>Ver más</Link>
             </div>
 
             <div className='homeThirdSectionCarouselDesktop' role='region' aria-roledescription='carrusel' aria-label='Proyectos'>
@@ -94,7 +94,7 @@ export const HomeThirdSection = () => {
                                 <span>{project.name}</span>
                                 {project.period}
                             </p>
-                            <Link href={project.href} className='buttonContacto disabled'>Ver más</Link>
+                            <Link href={project.href} className='buttonContacto'>Ver más</Link>
                         </div>
                     </article>;
                 })}
@@ -136,7 +136,7 @@ export const HomeThirdSection = () => {
                                     <span>{project.name}</span>
                                     {project.period}
                                 </p>
-                                <Link href={project.href} className='buttonContacto disabled'>Ver más</Link>
+                                <Link href={project.href} className='buttonContacto'>Ver más</Link>
                             </div>
                         </article>;
                     })}

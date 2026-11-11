@@ -17,7 +17,8 @@
       "/proyectos/austral6.avif"
     ],
     "thirdSectionImage": "/proyectos/austral3.avif",
-    "thirdSectionFirstImage": "/proyectos/austral2.avif"
+    "thirdSectionFirstImage": "/proyectos/austral2.avif",
+    "textoDestacado": "La integración de sistemas técnicos transforma espacios hospitalarios en entornos más seguros, accesibles y funcionales. Facilita las tareas del personal médico y eleva las condiciones de atención de los pacientes."
   },
   {
     "slug": "ovniplast",
@@ -37,7 +38,8 @@
       "/proyectos/ovniplast6.avif"
     ],
     "thirdSectionImage": "/proyectos/ovniplast3.avif",
-    "thirdSectionFirstImage": "/proyectos/ovniplast2.avif"
+    "thirdSectionFirstImage": "/proyectos/ovniplast2.avif",
+    "textoDestacado": "Proporcionamos el suministro eléctrico y neumático dentro de una estructura modular de facil acceso y mantenimiento. De esta forma, liberamos espacio en la superficie de trabajo y ordenamos los recorridos del cableado."
   },
   {
     "slug": "casa-hospital-san-juan-de-dios",
@@ -53,7 +55,8 @@
     "imgUrl": "/proyectos/sanjuan1.avif",
     "imagenes": [],
     "thirdSectionImage": "/proyectos/sanjuan3.avif",
-    "thirdSectionFirstImage": "/proyectos/sanjuan2.avif"
+    "thirdSectionFirstImage": "/proyectos/sanjuan2.avif",
+    "textoDestacado": "Integración de sistemas de gases medicinales y servicios asistenciales en los puestos de atención. Conexiones y suministros mejor organizados."
   },
   {
     "slug": "sanatorio-itoiz",
@@ -73,7 +76,8 @@
       "/proyectos/sanatorioitoiz6.avif"
     ],
     "thirdSectionImage": "/proyectos/sanatorioitoiz3.avif",
-    "thirdSectionFirstImage": "/proyectos/sanatorioitoiz2.avif"
+    "thirdSectionFirstImage": "/proyectos/sanatorioitoiz2.avif",
+    "textoDestacado": "Distribuimos aire y vacío con condiciones adecuadas de operación y continuidad: Red de gases medicinales\nCompresores de aire comprimido \nBomba de vacío\nPoliductos - Aparatología \nCuadro de 2da regulación\nComandos 02 - C02"
   },
   {
     "slug": "hospital-santa-marina",
@@ -84,12 +88,13 @@
     "sistema": "Brazo y columnas de quirófano",
     "descripcion": "Instalación de brazos y columnas de área quirúrgica para acercar los servicios y el equipamiento al campo de trabajo.",
     "escala": "9000 m²",
-    "beneficios": "Reducimos la congestión de cables y mangueras para una mejor circulación alrededor del paciente. El resultado es un área de trabajo más despejada y servicios posicionables según necesidad clínica.",
+    "beneficios": "Reducimos la congestión de cables y mangueras para una mejor circulación alrededor del paciente. El resultado es un área de trabajo más despejada y servicios posicionables según la necesidad clínica.",
     "driveUrl": "https://drive.google.com/drive/folders/1gZ8-7nosXvuG4zji3jLk8V4pzNybqci-?usp=drive_link",
     "imgUrl": "/proyectos/hospitalsantamarina1.avif",
     "imagenes": [],
     "thirdSectionImage": "/proyectos/hospitalsantamarina3.avif",
-    "thirdSectionFirstImage": "/proyectos/hospitalsantamarina2.avif"
+    "thirdSectionFirstImage": "/proyectos/hospitalsantamarina2.avif",
+    "textoDestacado": "Los brazos y columnas estimulan un posicionamiento más ergonómico al sostener el equipamiento, distribuir servicios y liberar superficie de piso."
   },
   {
     "slug": "sanatorio-guemes",
@@ -105,7 +110,8 @@
     "imgUrl": "/proyectos/sanatorioguemez1.avif",
     "imagenes": [],
     "thirdSectionImage": "/proyectos/sanatorioguemez3.avif",
-    "thirdSectionFirstImage": "/proyectos/sanatorioguemez2.avif"
+    "thirdSectionFirstImage": "/proyectos/sanatorioguemez2.avif",
+    "textoDestacado": "Contribuimos a una atención más ágil y coordinada desde una estratégica distribución del equipamiento hospitalario."
   },
   {
     "slug": "hospital-municipal-dr-bernardo-houssay",
@@ -121,7 +127,8 @@
     "imgUrl": "/proyectos/houssay1.avif",
     "imagenes": [],
     "thirdSectionImage": "/proyectos/houssay3.avif",
-    "thirdSectionFirstImage": "/proyectos/houssay2.avif"
+    "thirdSectionFirstImage": "/proyectos/houssay2.avif",
+    "textoDestacado": ""
   },
   {
     "slug": "hospital-de-la-madre-y-la-mujer",
@@ -130,9 +137,9 @@
     "anio": "2019-2025",
     "ubicacion": "Ciudad de Formosa, provincia de Formosa.",
     "sistema": "Redes de gases medicinales. Poliductos hospitalarios. Aparatología. Sistema de correo neumático. Columnas de techo. Islas. Alarmas de presión. Sistema de llamados.",
-    "descripcion": "SUM:  poliductos de un gas, con oxígeno y sujetador de aparatos. Office de Enfermería : poliductos de dos gases, con oxígeno y aire comprimido, además de regulador de aire de baja presión y pistola secadora. Guardia: Poliducto de 3G, oxígeno;aire comprimido;aspiración;soporte para aparatos;flowmeter de oxígeno;humectador;flowmeter de aire;trampa de aspiración.\n\nCorreo neumático: Sistema de transporte neumático Sumetzberger para traslado interno rápido de muestras, documentación o pequeños insumos mediante cápsulas.",
+    "descripcion": "SUM: poliductos de 1 gas con oxígeno y sujetador de aparatos. Office de Enfermería: poliductos de 2 gases con oxígeno y aire comprimido, regulador de aire de baja presión y pistola secadora. Guardia: Poliducto de 3 gases con oxígeno, aire comprimido, aspiración, soporte para aparatos, caudalímetro de oxígeno y aire, humectador y trampa de aspiración.\n\nInstalación de correo neumático: sistema de transporte Sumetzberger para traslado interno rápido de muestras, documentación o pequeños insumos.",
     "escala": "13530 m²",
-    "beneficios": "La instalación permitió centralizar y ordenar los servicios clínicos y técnicos en cada puesto de atención, mejorar el acceso a gases medicinales, energía, datos y sistemas de llamado, y adaptar la infraestructura a los distintos niveles de complejidad asistencial. La incorporación de alarmas, sistemas de llamado, columnas, islas y paneles específicos contribuyó a mejorar la capacidad de supervisión, la rapidez de respuesta del personal, la organización del equipamiento y la flexibilidad de los espacios hospitalarios.\n\n\nCorreo neumático: Mayor velocidad de intercambio interno y menor dependencia de recorridos peatonales. Reduce traslados manuales, acorta tiempos de entrega y mejora la trazabilidad operacional.",
+    "beneficios": "Ordenamos los servicios clínicos y técnicos en cada puesto de atención. La incorporación de alarmas, sistemas de llamados, columnas, islas y paneles específicos contribuyeron a la supervisión y respuesta inmediata del personal frente a urgencias.\n\nA partir del correo neumático reducimos los recorridos peatonales del cuerpo médico, disminuimos tiempos de entrega de insumos y mejoramos la trazabilidad operacional.",
     "driveUrl": "https://drive.google.com/drive/folders/1ZivWsR6VBLA4xstZ6QDXof6tsVFBsRgY",
     "imgUrl": "/proyectos/hospitalmadre1.avif",
     "imagenes": [
@@ -141,7 +148,8 @@
       "/proyectos/hospitalmadre6.avif"
     ],
     "thirdSectionImage": "/proyectos/hospitalmadre3.avif",
-    "thirdSectionFirstImage": "/proyectos/hospitalmadre2.avif"
+    "thirdSectionFirstImage": "/proyectos/hospitalmadre2.avif",
+    "textoDestacado": "Adaptamos la infraestructura técnica a los distintos niveles de complejidad asistencial de cada edificio hospitalario."
   },
   {
     "slug": "hospital-fernandez",
@@ -152,12 +160,13 @@
     "sistema": "Redes gases medicinales. Poliductos hospitalarios.",
     "descripcion": "Instalación de paneles verticales para integración de servicios técnicos en áreas asistenciales.\n\nColocación de alarma de 3G, para un monitoreo constante de la presión y el flujo de los gases, y de repetidoras de llamado de enfermera. Éstas se ubican en zonas de alto tránsito (pasillos, salas de descanso del personal, comedores, áreas de farmacia interna) con la intención de que el personal identifique las alertas desde distintos puntos del eficio.",
     "escala": "26611 m²",
-    "beneficios": "Generamos mayor espacio, mejor acceso a servicios y orden en las conexiones a través de los poliductos verticales.\n\nActivamos indicaciones por alarma para una intervención veloz y temprana del personal técnico u hospitalario.\n\nIdentificamos origenes de urgencias y generando tiempos inmediatos de respuesta por parte del cuerpo médico.",
+    "beneficios": "Generamos mayor espacio, mejor acceso a servicios y orden en las conexiones a través de los poliductos verticales.\n\nActivamos indicaciones por alarma para una intervención veloz y temprana del personal técnico u hospitalario.\n\nIdentificamos origenes de urgencias generando tiempos inmediatos de respuesta por parte del cuerpo médico.",
     "driveUrl": "https://drive.google.com/drive/folders/1InuBM1T02KIB4vgIdim_LrSGbkX5EGBU?usp=drive_link",
     "imgUrl": "/proyectos/fernandez1.avif",
     "imagenes": [],
     "thirdSectionImage": "/proyectos/fernandez3.avif",
-    "thirdSectionFirstImage": "/proyectos/fernandez2.avif"
+    "thirdSectionFirstImage": "/proyectos/fernandez2.avif",
+    "textoDestacado": "Fortalecemos la coordinación entre los equipos médicos mediante infraestructuras técnicas."
   },
   {
     "slug": "cemic-saavedra",
@@ -173,6 +182,7 @@
     "imgUrl": "/proyectos/saavedra1.avif",
     "imagenes": [],
     "thirdSectionImage": "/proyectos/saavedra3.avif",
-    "thirdSectionFirstImage": "/proyectos/saavedra2.avif"
+    "thirdSectionFirstImage": "/proyectos/saavedra2.avif",
+    "textoDestacado": "Poliductos hospitalarios: satisfacción de iluminación, alarmas, señales, suministro de gases de uso médico y vacío, soporte de recursos para diversas prácticas médicas, todo en un mismo equipo."
   }
 ]
